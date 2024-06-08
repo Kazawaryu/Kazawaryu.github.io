@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Zexuan Jia / Ghosn Jia"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://kazawaryu.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "https://github.com/Kazawaryu/Kazawaryu.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Zexuan Jia"
   pronouns         : # example: "she/her"  
-  bio              : "Foucs on autonomous driving and robotics, research on lidar detection algorithm, data closed-up, deep learning, and robotics."
+  bio              : "Foucs on autonomous driving and robotics, research on lidar detection algorithm, dataset closed-up, deep learning, and robotics."
   location         : "Nanshan, Shenzhen, China"
-  employer         : "Southern University of \n Science and Technology"
+  employer         : "Southern University of Science and Technology"
   uri              : # URL
   email            : "12011126@mail.sustech.edu.cn" 
 
@@ -71,7 +71,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : "https://www.zhihu.com/people/qva-33"
+   zhihu            : "https://www.zhihu.com/people/qva-33"
 
 
 # Site Settings
