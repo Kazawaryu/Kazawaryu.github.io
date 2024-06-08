@@ -12,9 +12,9 @@ title                    : "Zexuan Jia / Ghosn Jia"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
-url                      : "https://kazawaryu.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://kazawaryu.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/Kazawaryu/Kazawaryu.github.io"
+repository               : "Kazawaryu/Kazawaryu.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -71,7 +71,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : # "https://www.zhihu.com/people/qva-33"
+   zhihu            : "https://www.zhihu.com/people/qva-33"
 
 
 # Site Settings
