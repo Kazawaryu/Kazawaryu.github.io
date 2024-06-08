@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Foucs on autonomous driving and robotics, research on lidar detection algorithm, data closed-up, deep learning, and robotics."
   location         : "Nanshan, Shenzhen, China"
-  employer         : "Southern University of Science and Technology"
+  employer         : "Southern University of \n Science and Technology"
   uri              : # URL
   email            : "12011126@mail.sustech.edu.cn" 
 
