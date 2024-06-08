@@ -22,13 +22,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Zexuan Jia / Ghosn P Jia"
+  name             : "Your Sidebar Name"
   pronouns         : # example: "she/her"  
-  bio              : "Foucs on autonomous driving and robotics, research on lidar detection algorithm, data closed-up, deep learning, and robotics."
-  location         : "Nanshan, Shenzhen, China"
-  employer         : "Southern University of Science and Technology"
+  bio              : "Short biography for the left-hand sidebar"
+  location         : "Earth"
+  employer         : "Red Brick University"
   uri              : # URL
-  email            : "12011126@mail.sustech.edu.cn" 
+  email            : "none@example.org" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
