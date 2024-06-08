@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Zexuan Jia"
   pronouns         : # example: "she/her"  
-  bio              : "Foucs on autonomous driving and robotics, research on lidar detection algorithm, dataset closed-up, deep learning, and robotics."
+  bio              : "Autonomous driving researcher"
   location         : "Nanshan, Shenzhen, China"
   employer         : "Southern University of Science and Technology"
   uri              : # URL
@@ -71,7 +71,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : "https://www.zhihu.com/people/qva-33"
+  zhihu            : # "https://www.zhihu.com/people/qva-33"
 
 
 # Site Settings
