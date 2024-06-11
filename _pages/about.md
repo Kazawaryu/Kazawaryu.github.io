@@ -61,7 +61,7 @@ table th:nth-of-type(8) {
 **Tools and Framework:**
 
 
-| Linux | Docker | Latex | Git | Pytorch | ROS | OpenCV | Unity3D | 
+| Linux | Docker | Latex | Git | Pytorch | ROS | OpenCV | Unity | 
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |<img src="../images/icons/Linux-Dark.svg" width="48"> | <img src="../images/icons/Docker.svg" width="48">  | <img src="../images/icons/LaTeX-Dark.svg" width="48"> |<img src="../images/icons/Git.svg" width="48"> | <img src="../images/icons/PyTorch-Dark.svg" width="48"> |  <img src="../images/icons/ROS-Dark.svg" width="48">  | <img src="../images/icons/OpenCV-Dark.svg" width="48">  | <img src="../images/icons/Unity-Dark.svg" width="48">| 
 | 3 years | 2 years | 2 years | 2 years | 2 years  | 1 year | 1 year | 1 year | 
