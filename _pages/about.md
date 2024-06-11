@@ -69,3 +69,13 @@ table th:nth-of-type(8) {
 ## Experience
 - **Intern**, [SUSTech RCIT Lab](https://cse.sustech.edu.cn/en/research/labView/id/161) Autonoumous driving algorithm researcher, 2024.04 - Present
 - **Intern**, [KiloX Technology](https://www.kilox.cn/) Lidar segemantation algorithm developer, 2023.06 - 2023.08
+
+## Contact Me
+
+Click [**HERE**](../images/QR.png) to save my CV QR code :)
+
+```yaml
+Email: 12011126@mail.sustech.edu.cn
+GitHub: https://github.com/Kazawaryu
+Zhihu: https://www.zhihu.com/people/qva-33
+```
