@@ -141,6 +141,7 @@ python vtuber_link_start.py
 
 ### Model Training
 We use tensorflow as training toolkit. Use WiderFace (in COCO format) dataset as training set and validating set. The details of dataset are as follow.
+
 | Dataset   | Frames | Sample-train | Sample-val | mAP-val   |
 | --------- | ------ | ------------ | ---------- | --------- |
 | WiderFace | 32203  | 158,989      | 39,496     | ***0.865*** | 
@@ -151,6 +152,7 @@ We set `epoch=80, batch_size=16, lr=0.0001-0.001 (auto set)`, this is the loss c
 
 ### Real-time Performance
 We test the real time performance on Jetson Nano.
+
 | Face Detection | Face Alignment | Pose Estimate | Iris Localization | Sum     | FPS    |
 | -------------- | -------------- | ------------- | ----------------- | ------- | ------ |
 | 45.5ms         | 24.9ms         | 48.7ms        | 22.3ms            | 141.4ms | 7.07±1 | 
@@ -161,6 +163,7 @@ After using fast face detection optimization, the performance will be:
 | 12.3ms         | 18.1ms         | 49.2ms        | 22.6ms            | 104.2ms | 9.59±1 | 
 
 ### Our optimization (general test)
+
 | Scale | RetinaFace           | Faster RetinaFace  | Speed Up |
 | ----- | -------------------- | ------------------ | -------- |
 | 0.1   | 2.854ms              | **2.155ms (Ours)** | 32%      |
