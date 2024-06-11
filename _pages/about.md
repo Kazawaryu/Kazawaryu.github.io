@@ -13,7 +13,13 @@ I am currently interning at SUSTech [RCIT]((https://cse.sustech.edu.cn/en/resear
 
 ## Skills
 **Research Interests:**
+<!-- ![](https://img.shields.io/badge/Autonomous%20Driving-02A9FF?style=for-the-badge)
+![](https://img.shields.io/badge/Data%20closedup-03C75A?style=for-the-badge)
+![](https://img.shields.io/badge/Lidar-9013FE?style=for-the-badge)
+![](https://img.shields.io/badge/CARLA-EC3750?style=for-the-badge)
+![](https://img.shields.io/badge/Deep%20Learning-000000?style=for-the-badge) -->
 
+Automotive, Autonomous Driving, Data closed-up, Lidar Detection Alogrithm, CARLA, Deep Learning, ARM Embedded System, Robotics, Computer Vision, Machine Learning
 
 **Programming Languages:** 
 
@@ -24,6 +30,8 @@ I am currently interning at SUSTech [RCIT]((https://cse.sustech.edu.cn/en/resear
 
 **Tools and Framework:**
 
-| Linux | Docker | Latex | Pytorch | ROS | OpenCV | Unity3D | Git |
+| Linux | Docker | Latex | Git | Pytorch | ROS | OpenCV | Unity3D | 
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-|<img src="../images/icons/Linux-Dark.svg" width="48"> | <img src="../images/icons/Docker.svg" width="48">  | <img src="../images/icons/LaTeX-Dark.svg" width="48"> | <img src="../images/icons/PyTorch-Dark.svg" width="48"> |  <img src="../images/icons/ROS-Dark.svg" width="48">  | <img src="../images/icons/OpenCV-Dark.svg" width="48">  | <img src="../images/icons/Unity-Dark.svg" width="48">| <img src="../images/icons/Git.svg" width="48"> |
+|<img src="../images/icons/Linux-Dark.svg" width="48"> | <img src="../images/icons/Docker.svg" width="48">  | <img src="../images/icons/LaTeX-Dark.svg" width="48"> |<img src="../images/icons/Git.svg" width="48"> | <img src="../images/icons/PyTorch-Dark.svg" width="48"> |  <img src="../images/icons/ROS-Dark.svg" width="48">  | <img src="../images/icons/OpenCV-Dark.svg" width="48">  | <img src="../images/icons/Unity-Dark.svg" width="48">| 
+| 3 years | 2 years | 2 years | 2 years | 2 year  | 1 year | 1 year | 1 year | 
+
