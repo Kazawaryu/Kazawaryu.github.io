@@ -158,6 +158,7 @@ We test the real time performance on Jetson Nano.
 | 45.5ms         | 24.9ms         | 48.7ms        | 22.3ms            | 141.4ms | 7.07±1 | 
 
 After using fast face detection optimization, the performance will be:
+
 | Face Detection | Face Alignment | Pose Estimate | Iris Localization | Sum     | FPS    |
 | -------------- | -------------- | ------------- | ----------------- | ------- | ------ |
 | 12.3ms         | 18.1ms         | 49.2ms        | 22.6ms            | 104.2ms | 9.59±1 | 
