@@ -77,13 +77,13 @@ For middle-close range face detection, appropriately removing FPN layers and red
  -->
 
 | CPU        | GPU                            | MEM | Storage       | JetPack |
-| ---------- | ------------------------------ | --- | ------------- | ------- |
+|:----------:|:------------------------------:|:---:|:-------------:|:-------:|
 | Cortex-A57 | NVIDIA Maxwell (128 cuda core) | 4GB | 16GB Emmc 5.1 | 4.6.1   |
 
 ### Training Platform: x86-Debian-cluster
 
 | CPU                        | GPU            | MEM   | Cuda Version | IP           |
-| -------------------------- | -------------- | ----- | ------------ | ------------ |
+|:--------------------------:|:--------------:|:-----:|:------------:|:------------:|
 | Intel(R) Xeon(R) Gold 6240 | Tesla V100 x 4 | 128GB | 11.7         | 172.18.34.23 |
 
 ## Setup
