@@ -11,14 +11,20 @@ I am currently interning at SUSTech [RCIT]((https://cse.sustech.edu.cn/en/resear
 ## Education
 - B.Eng. in Computer Science and Engineering, Southern University of Science and Technology, 2025 (expected)
 
-## Research Interests
-- Autonomous Driving
-- Machine Learning
-- Deep Learning
-- Embedded System
-
 ## Skills
-- Programming Languages: Python, Java, C#, C++
-- Tools: Linux, Slurm, mmDetection3D, OpenPCDet, Singularity, Pytorch, Unity3D 
-- Languages: Chinese (native), English (fluent)
+**Research Interests:**
 
+
+
+**Programming Languages:** 
+
+| Python | Java | C++ | Shell | C# | GoDot | Lua | NeoVim |
+|:------:|:---:|:----:|:-----:|:--:|:-----:|:---:|:---:|
+|<img src="./icons/Python-Dark.svg" width="48"> | <img src="./icons/Java-Dark.svg" width="48"> | <img src="./icons/CPP.svg" width="48"> | <img src="./icons/Powershell-Dark.svg" width="48">| <img src="./icons/CS.svg" width="48"> | <img src="./icons/Godot-Dark.svg" width="48"> | <img src="./icons/Lua-Dark.svg" width="48">  |  <img src="./icons/NeoVim-Dark.svg" width="48"> |
+| 3 years | 3 years | 2 years | 2 years | 1 year | 1 year | 1 year | 1 year |
+
+**Tools and Framework:**
+
+| Linux | Docker | Latex | Pytorch | ROS | OpenCV | Unity3D | Git |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|<img src="./icons/Linux-Dark.svg" width="48"> | <img src="./icons/Docker.svg" width="48">  | <img src="./icons/LaTeX-Dark.svg" width="48"> | <img src="./icons/PyTorch-Dark.svg" width="48"> |  <img src="./icons/ROS-Dark.svg" width="48">  | <img src="./icons/OpenCV-Dark.svg" width="48">  | <img src="./icons/Unity-Dark.svg" width="48">| <img src="./icons/Git.svg" width="48"> |
