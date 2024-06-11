@@ -8,6 +8,8 @@ redirect_from:
 ---
 I am currently interning at SUSTech [RCIT]((https://cse.sustech.edu.cn/en/research/labView/id/161)) (Research Center for Intelligent Transportation), working on data closed-up, lidar detection algorithms in autonomous driving. I am a current undergraduate student at [SUSTech](https://www.sustech.edu.cn/en/) (Southern University of Science and Technology), majoring in Computer Science and Engineering. I have some learning and engineering experience in machine learning and deep learning.
 
+In the field of autonomous driving, I am familiar with some frameworks, especially related to point cloud perception algorithms, such as [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) and [mmDetection3D](https://github.com/open-mmlab/mmdetection3d). in the field of simulation, I am able to work with [Carla](https://github.com/carla-simulator/carla) and can use it in conjunction with [Apollo](https://github.com/apolloconfig/apollo). In deep learning training, I am able to operate [Slurm](https://github.com/SchedMD/slurm) and [Singularity](https://github.com/apptainer/singularity) skillfully.
+
 ## Education
 - B.Eng. in Computer Science and Engineering, Southern University of Science and Technology, 2025 (expected)
 
@@ -39,14 +41,15 @@ table th:nth-of-type(8) {
     width: 12.5%;
 }
 </style>
-**Research Interests:**
+**Research & Develop Interests:**
 <!-- ![](https://img.shields.io/badge/Autonomous%20Driving-02A9FF?style=for-the-badge)
 ![](https://img.shields.io/badge/Data%20closedup-03C75A?style=for-the-badge)
 ![](https://img.shields.io/badge/Lidar-9013FE?style=for-the-badge)
 ![](https://img.shields.io/badge/CARLA-EC3750?style=for-the-badge)
 ![](https://img.shields.io/badge/Deep%20Learning-000000?style=for-the-badge) -->
 
-Automotive, Autonomous Driving, Data closed-up, Lidar Detection Alogrithm, CARLA, Deep Learning, ARM Embedded System, Robotics, Computer Vision, Machine Learning
+- **Autonomous Driving**, **Data closed-up**, **Lidar Detection Alogrithm**, CARLA, Deep Learning, Computer Vision, Machine Learning
+- ARM Embedded System, Robotics, SLAM, Unity3D Game, STM32 Embedded System, Jetson, Issac
 
 **Programming Languages:** 
 
