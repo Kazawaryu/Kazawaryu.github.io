@@ -8,9 +8,9 @@ date: 2023-04-02
 location: "Socket, Spring"
 ---
 
-# Cat Chat - Online Chat Software
-
 You can find the source code of Cat Chat on my [GitHub](https://github.com/Kazawaryu/Cat-Chat-Online-Chat-Software) repository.
+
+# Cat Chat - Online Chat Software
 
 ## 0.	Software Introduction
 
