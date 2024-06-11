@@ -19,11 +19,11 @@ I am currently interning at SUSTech [RCIT]((https://cse.sustech.edu.cn/en/resear
 
 | Python | Java | C++ | Shell | C# | GoDot | Lua | NeoVim |
 |:------:|:---:|:----:|:-----:|:--:|:-----:|:---:|:---:|
-|<img src="./icons/Python-Dark.svg" width="48"> | <img src="./icons/Java-Dark.svg" width="48"> | <img src="./icons/CPP.svg" width="48"> | <img src="./icons/Powershell-Dark.svg" width="48">| <img src="./icons/CS.svg" width="48"> | <img src="./icons/Godot-Dark.svg" width="48"> | <img src="./icons/Lua-Dark.svg" width="48">  |  <img src="./icons/NeoVim-Dark.svg" width="48"> |
+|<img src="../images/icons/Python-Dark.svg" width="48"> | <img src="../images/icons/Java-Dark.svg" width="48"> | <img src="../images/icons/CPP.svg" width="48"> | <img src="../images/icons/Powershell-Dark.svg" width="48">| <img src="../images/icons/CS.svg" width="48"> | <img src="../images/icons/Godot-Dark.svg" width="48"> | <img src="../images/icons/Lua-Dark.svg" width="48">  |  <img src="../images/icons/NeoVim-Dark.svg" width="48"> |
 | 3 years | 3 years | 2 years | 2 years | 1 year | 1 year | 1 year | 1 year |
 
 **Tools and Framework:**
 
 | Linux | Docker | Latex | Pytorch | ROS | OpenCV | Unity3D | Git |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-|<img src="./icons/Linux-Dark.svg" width="48"> | <img src="./icons/Docker.svg" width="48">  | <img src="./icons/LaTeX-Dark.svg" width="48"> | <img src="./icons/PyTorch-Dark.svg" width="48"> |  <img src="./icons/ROS-Dark.svg" width="48">  | <img src="./icons/OpenCV-Dark.svg" width="48">  | <img src="./icons/Unity-Dark.svg" width="48">| <img src="./icons/Git.svg" width="48"> |
+|<img src="../images/icons/Linux-Dark.svg" width="48"> | <img src="../images/icons/Docker.svg" width="48">  | <img src="../images/icons/LaTeX-Dark.svg" width="48"> | <img src="../images/icons/PyTorch-Dark.svg" width="48"> |  <img src="../images/icons/ROS-Dark.svg" width="48">  | <img src="../images/icons/OpenCV-Dark.svg" width="48">  | <img src="../images/icons/Unity-Dark.svg" width="48">| <img src="../images/icons/Git.svg" width="48"> |
