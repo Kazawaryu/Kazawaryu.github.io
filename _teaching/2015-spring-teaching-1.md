@@ -2,7 +2,7 @@
 title: "Cat Chat - Online Chat Software"
 collection: teaching
 type: "Personal Project"
-permalink: /teaching/catchat
+permalink: /teaching/2015-spring-teaching-1
 venue: "Java"
 date: 2023-04-02
 location: "Socket, Spring"
