@@ -12,6 +12,33 @@ I am currently interning at SUSTech [RCIT]((https://cse.sustech.edu.cn/en/resear
 - B.Eng. in Computer Science and Engineering, Southern University of Science and Technology, 2025 (expected)
 
 ## Skills
+<!-- 设置style，使得表格等宽 -->
+<style>
+table th:first-of-type {
+    width: 12.5%;
+}
+table th:nth-of-type(2) {
+    width: 12.5%;
+}
+table th:nth-of-type(3) {
+    width: 12.5%;
+}
+table th:nth-of-type(4) {
+    width: 12.5%;
+}
+table th:nth-of-type(5) {
+    width: 12.5%;
+}
+table th:nth-of-type(6) {
+    width: 12.5%;
+}
+table th:nth-of-type(7) {
+    width: 12.5%;
+}
+table th:nth-of-type(8) {
+    width: 12.5%;
+}
+</style>
 **Research Interests:**
 <!-- ![](https://img.shields.io/badge/Autonomous%20Driving-02A9FF?style=for-the-badge)
 ![](https://img.shields.io/badge/Data%20closedup-03C75A?style=for-the-badge)
