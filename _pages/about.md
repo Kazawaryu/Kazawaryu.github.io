@@ -53,7 +53,7 @@ table th:nth-of-type(8) {
 
 **Programming Languages:** 
 
-| Python | Java | C++ | Shell | C# | GoDot | Lua | NeoVim |
+| Python | Java | C++ | Shell | C# | GoDot | Lua | NVim |
 |:------:|:---:|:----:|:-----:|:--:|:-----:|:---:|:---:|
 |<img src="../images/icons/Python-Dark.svg" width="48"> | <img src="../images/icons/Java-Dark.svg" width="48"> | <img src="../images/icons/CPP.svg" width="48"> | <img src="../images/icons/Powershell-Dark.svg" width="48">| <img src="../images/icons/CS.svg" width="48"> | <img src="../images/icons/Godot-Dark.svg" width="48"> | <img src="../images/icons/Lua-Dark.svg" width="48">  |  <img src="../images/icons/NeoVim-Dark.svg" width="48"> |
 | 3 years | 3 years | 2 years | 2 years | 1 year | 1 year | 1 year | 1 year |
@@ -63,7 +63,7 @@ table th:nth-of-type(8) {
 | Linux | Docker | Latex | Git | Pytorch | ROS | OpenCV | Unity3D | 
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |<img src="../images/icons/Linux-Dark.svg" width="48"> | <img src="../images/icons/Docker.svg" width="48">  | <img src="../images/icons/LaTeX-Dark.svg" width="48"> |<img src="../images/icons/Git.svg" width="48"> | <img src="../images/icons/PyTorch-Dark.svg" width="48"> |  <img src="../images/icons/ROS-Dark.svg" width="48">  | <img src="../images/icons/OpenCV-Dark.svg" width="48">  | <img src="../images/icons/Unity-Dark.svg" width="48">| 
-| 3 years | 2 years | 2 years | 2 years | 2 year  | 1 year | 1 year | 1 year | 
+| 3 years | 2 years | 2 years | 2 years | 2 years  | 1 year | 1 year | 1 year | 
 
 
 ## Experience
