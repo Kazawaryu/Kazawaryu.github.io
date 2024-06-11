@@ -65,3 +65,7 @@ table th:nth-of-type(8) {
 |<img src="../images/icons/Linux-Dark.svg" width="48"> | <img src="../images/icons/Docker.svg" width="48">  | <img src="../images/icons/LaTeX-Dark.svg" width="48"> |<img src="../images/icons/Git.svg" width="48"> | <img src="../images/icons/PyTorch-Dark.svg" width="48"> |  <img src="../images/icons/ROS-Dark.svg" width="48">  | <img src="../images/icons/OpenCV-Dark.svg" width="48">  | <img src="../images/icons/Unity-Dark.svg" width="48">| 
 | 3 years | 2 years | 2 years | 2 years | 2 year  | 1 year | 1 year | 1 year | 
 
+
+## Experience
+- **Intern**, [SUSTech RCIT Lab](https://cse.sustech.edu.cn/en/research/labView/id/161) Autonoumous driving algorithm researcher, 2024.04 - Present
+- **Intern**, [KiloX Technology](https://www.kilox.cn/) Lidar segemantation algorithm developer, 2023.06 - 2023.08
