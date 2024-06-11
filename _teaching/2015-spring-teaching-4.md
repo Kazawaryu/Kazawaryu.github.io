@@ -14,4 +14,6 @@ location: "C++, Embedded System"
 
 You can find the source code of STM32 Pokémon game on my [GitHub](https://github.com/Kazawaryu/STM32-Pokemon-game)
 
-https://user-images.githubusercontent.com/112942833/231115577-ce9b88ef-cc5d-475c-9bdd-9d01ad08827d.mp4
+<video width="320" height="240" controls>
+    <source src="https://user-images.githubusercontent.com/112942833/231115577-ce9b88ef-cc5d-475c-9bdd-9d01ad08827d.mp4" type="video/mp4">
+</video>
