@@ -3,9 +3,9 @@ title: "Unity3D War Chess Game - Infinite War"
 collection: teaching
 type: "Personal project"
 permalink: /teaching/2015-spring-teaching-6
-venue: "CARLA"
-date: 2023-08-12
-location: "Python, ROS, CARLA"
+venue: "Unity3D"
+date: 2023-10-22
+location: "C#, Object Oriented Analysis Design"
 ---
 
 An unity 3D game written by C#, it is a local double players game. 
