@@ -10,7 +10,6 @@ location: "Socket, Spring"
 
 An online chat software, a project similar to QQ in Java with basic functions such as personal chat and group chat. 
 
-# Cat Chat - Online Chat Software
 You can find the source code of Cat Chat on my [GitHub](https://github.com/Kazawaryu/Cat-Chat-Online-Chat-Software) repository.
 ## 0.	Software Introduction
 

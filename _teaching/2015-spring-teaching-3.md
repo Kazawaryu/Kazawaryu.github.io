@@ -10,8 +10,6 @@ location: "Python, Ryu, Mininet"
 
 An SDN and DHCP simulation project based on Ryu and Mininet, a simple DHCP server and the implementation of the shortest path switching algorithm. 
 
-# SDN and DHCP Simulation on Ryu-mininet
-
 You can find the source code of Cat Chat on my [GitHub](https://github.com/Kazawaryu/Ryu-mininet-SDN-DHCP) repository.
 
 ## Introduction

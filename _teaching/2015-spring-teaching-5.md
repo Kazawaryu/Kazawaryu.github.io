@@ -10,8 +10,6 @@ location: "Python, ROS, CARLA"
 
 Data collection tools with active data acquisition algorithm implemented for CARLA Simulator.
 
-# Active Data Acquisition in Autonomous Driving Simulation
-
 ![](../images/carla/s4.png)
 
 You can find the source code of Cat Chat on my [GitHub](https://github.com/Kazawaryu/CARLA_ADA) repository.

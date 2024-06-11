@@ -10,8 +10,6 @@ location: "C#, Object Oriented Analysis Design"
 
 An unity 3D game written by C#, it is a local double players game. 
 
-# Unity War Chess Game
-
 You can find the source code of Unity War Chess Game on my [GitHub](https://github.com/Kazawaryu/Unity_Warchess_Game) repository.
 
 An unity 3D game written by C#, it is a local double players game. The game contains skill system, level system, item system and equipment system. The project used several **Object Oriented Analysis Designs** to be maintained easily. 

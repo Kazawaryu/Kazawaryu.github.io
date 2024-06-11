@@ -10,8 +10,6 @@ location: "C++, Embedded System"
 
  An embedded Pokémon game written in C language, supports wireless two-player battles, and has multiple functional modules such as characters, skills, and props.
 
-# STM32 Pokémon game
-
 You can find the source code of STM32 Pokémon game on my [GitHub](https://github.com/Kazawaryu/STM32-Pokemon-game) repository.
 
 <video width="320" height="240" controls>

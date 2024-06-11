@@ -10,8 +10,6 @@ location: "Jetson Nano, ARM64"
 
 An real-time face alignment toolkit for vitural youtuber on embedded device, which based on [RetinaFace](https://openaccess.thecvf.com/content_CVPR_2020/html/Deng_RetinaFace_Single-Shot_Multi-Level_Face_Localisation_in_the_Wild_CVPR_2020_paper.html) (CVPR, 2020).
 
-# Deep Learning based Real-time Virtual YouTuber Face Projection System
-
 You can find a short wideo of the project on [Bilibili](https://www.bilibili.com/video/BV1MT421v7sQ).
 
 ![a](https://img.shields.io/badge/Python-3.6-green?style=flat-square) ![c](https://img.shields.io/badge/JetPack-4.6.1-orange?style=flat-square) ![b](https://img.shields.io/badge/Code%20Version-1.2-blue?style=flat-square) ![d](https://img.shields.io/badge/CVPR-2020-red?style=flat-square) 
