@@ -305,12 +305,11 @@ def add_forwarding_rule(self, datapath, dl_dst, port):
         actions=actions)
 ```
 
-
 ### Useful Documents
-1. Ryu's API documentation https://ryu.readthedocs.io/en/latest/index.html
-2. Mininet's document https://github.com/mininet/mininet/wiki/Documentation
-3. Mininet source code https://github.com/mininet/mininet
-4. Openflow quick start https://homepages.dcc.ufmg.br/~mmvieira/cc/OpenFlow%20Tutorial%20-%20OpenFlow%20Wiki.htm
+1. [Ryu's API documentation](https://ryu.readthedocs.io/en/latest/index.html)
+2. [Mininet's document](https://github.com/mininet/mininet/wiki/Documentation)
+3. [Mininet source code](https://github.com/mininet/mininet)
+4. [Openflow quick start](https://homepages.dcc.ufmg.br/~mmvieira/cc/OpenFlow%20Tutorial%20-%20OpenFlow%20Wiki.html)
 
 
 ## Acknowledgments
