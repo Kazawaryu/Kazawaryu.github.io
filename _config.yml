@@ -3,10 +3,10 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Jona
+first_name: Zexuan
 middle_name: 
-last_name: Ruthardt
-email: jona@ruthardt.de
+last_name: Jia
+email: 12011126@mail.sustech.edu.cn
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Academic website of Jona Ruthardt.
 footer_text: >

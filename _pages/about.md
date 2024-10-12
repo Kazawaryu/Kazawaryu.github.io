@@ -6,7 +6,7 @@ subtitle: MSc Artificial Intelligence @ UvA
 
 profile:
   align: right
-  image: profile_pic_jona_ruthardt.jpg
+  image: ID_ZX.png
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>Amsterdam, Netherlands</p>
