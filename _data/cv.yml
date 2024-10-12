@@ -2,96 +2,115 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Jona Ruthardt
+    - name: Occupation
+      value: Master's Student at University of Amsterdam
+    - name: Nationality
+      value: German
     - name: Languages
       value: English, German
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: MSc Artificial Intelligence
+      institution: University of Amsterdam, Amsterdam (NL)
+      year: 09/22-07/24
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Master of Science, Artificial Intelligence
+        - Courses in Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Information Retrieval, Philosophy
+    - title: IoT and AI Summer School
+      institution: Université Sorbonne Paris Nord, Paris (FR)
+      year: 07/23
+    - title: BSc Computer Science
+      institution: Baden-Wuerttemberg Cooperative State University, Stuttgart (DE)
+      year: 10/18-09/21
       description:
-        - Description 1.
-        - Description 2.
+        - Bachelor of Science, Computer Science (IT-Automotive)
+        - Dual study degree in cooperation with Robert Bosch GmbH
+        - Courses in Computer Engineering, Programming, Software Engineering, Automotive Software Development
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Computer Vision Research Intern
+      institution: TNO - Intelligent Imaging Group, The Hague (NL)
+      year: 11/23-now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Research into how large language models can be utilized for low-resource image classification
+        - Master’s thesis is part of internship at TNO’s Intelligent Imaging Group
+    - title: Research Assistant
+      institution: University of Amsterdam, Amsterdam (NL)
+      year: 04/23-now
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Investigation into exploiting generalization capabilities of large language models in vision domain
+        - Extracurricular research project supervised by Dr. Yuki Asano (QUVA Lab)
+    - title: Teaching Assistant
+      institution: University of Amsterdam, Amsterdam (NL)
+      year: 11/23-01/24
       description:
+        - Teaching and supervising tutorials as part of the UvA Deep Learning 1 course (master’s level)
+        - Contributing to and grading assignments and exams
+    - title: Data Analyst (Comercial Internal Auditing)
+      institution: Robert Bosch GmbH, Stuttgart (DE)
+      year: 10/21-08/23
+      description:
+        - Supported commercial audits from a data analytics perspective by extracting data from corporate IT systems (e.g., SAP, data lake) and preparing dashboards (Excel, PowerBI) containing important KPIs and visualizations
+        - Participated in Risk Management System audit and developed data analytics concept utilizing data from internal reporting tool
+        - Utilized (un)supervised ML methods to develop and enhance analyses (anomaly detection in transactions, clustering of process and document types, double posting detection) using Python libraries such as scikit-learn or Keras
+        - Developed approach that identified multiple compliance violations based on patterns in previous cases, and reporting framework for anti-money laundry that is actively used by legal division in the role of technical topic owner for fraud analytics
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Dual Study Program Student
+      institution: Robert Bosch GmbH, Stuttgart (DE)
+      year: 10/18-09/21
+      description:
+        - Participated in a dual study degree program in the field of study of computer science (specialization IT-Automotive) 
+        - Conducted several multi-month internships and research projects (see "Projects" section) at different business units and departments with an emphasis on artificial intelligence, computer vision, and autonomous driving
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Working Student - Infrastructure and Digitalization
+      institution: bc-competence gmbh, Renningen (DE)
+      year: 06/19-02/21
+      description:
+        - Managed project to adopt mobile device management (MDM) for Apple devices
+        - Set up and maintained IT infrastructure (local network, active directory, SAP, etc.)
+        - Involvement in the application for public research grants for cloud and digitization projects
+
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 15-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+        - Accapted into MSc Honours Programme offered by the ELLIS Unit Amsterdam
+    - year: 2022
+      items: 
+        - Award for Best Bachelor's Thesis of the 2021 and 2022 academic year in the domain of Artificial Intelligence across all establishments and locations of the Baden-Wuerttemberg Cooperative State University.
+    - year: 2021
+      items: 
+        - Award for Best Practical Achievements during Studies
+    - year: 2018
+      items: 
+        - DPG Baccalaureate Prize for exceptional achievements in physics during high school
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items: 
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
