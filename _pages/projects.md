@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Award
+permalink: /award/
 description: A growing collection of your cool projects.
 nav: true
 nav_order: 3
 display_categories: [work, fun]
-horizontal: true
-published: true
+horizontal: false
+published: false
 ---
 
 <!-- pages/projects.md -->
