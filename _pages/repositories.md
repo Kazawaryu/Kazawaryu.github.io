@@ -9,12 +9,15 @@ nav_order: 4
 
 ## GitHub User
 
-{% if site.data.repositories.github_users %}
+<!-- {% if site.data.repositories.github_users %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for user in site.data.repositories.github_users %}
     {% include repository/repo_user.html username=user %}
   {% endfor %}
-</div>
+</div> -->
+
+
+ <img align="right" src="https://bad-apple-github-readme.vercel.app/api?show_bg=1&username=Kazawaryu&show_icons=true&icon_color=CE1D2D&text_color=718096&bg_color=ffffff" />
 
 ---
 

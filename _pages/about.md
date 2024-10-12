@@ -7,7 +7,7 @@ subtitle: MSc Artificial Intelligence @ UvA
 profile:
   align: right
   image: ID_ZX.png
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>Amsterdam, Netherlands</p>
 
