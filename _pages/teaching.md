@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
+permalink: /award/
+title: award
 published: false
 description: Materials for courses you taught. Replace this text with your description.
 nav: true

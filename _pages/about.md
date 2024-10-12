@@ -9,7 +9,7 @@ profile:
   image: ID_ZX.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>23, Male，Chinese citizenship</p>
+    <p>23 years old, Male，Chinese</p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
