@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: MSc Artificial Intelligence @ UvA
+subtitle: B.S. Computer Science and Technology @ SUSTech
 
 profile:
   align: right
@@ -17,8 +17,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a second-year master's student studying Artificial Intelligence at the University of Amsterdam. My research interests mainly revolve around Computer Vision, Multi-Modal Learning, and Autonomous Systems. I am excited about developing innovative AI solutions that transcend theoretical boundaries and address tangible real-world challenges. 
+I am an undergraduate at the Southern University of Science and Technology, focusing on 3D perception algorithms and dataset optimization in autonomous driving.
 
-Currently, I am working on my master's thesis, where we try to leverage the vast amount of encyclopedic knowledge contained within large language models for tasks in the computer vision domain. This project is carried out in cooperation with TNO's [Intelligent Imaging Group](https://www.tno.nl/en/about-tno/organisation/units/defence-safety-security/intelligent-imaging/) and under the joint supervision of [Gertjan Burghouts](https://gertjanburghouts.github.io/), [Yuki Asano](https://yukimasano.github.io/), and [Serge Belongie](https://sergebelongie.github.io).
+Currently, I am interning as a Research Assistant at the Intelligent Sensing and Unmanned System Lab of Computer Science and Engineering, under the joint supervision of Professor Qi Hao and Research Professor Gongjin Lan, funded by Guangdong Student Science and Technology Innovation Fund.
 
-I am actively looking for PhD positions at the moment. 
+I have developed the ground segmentation algorithms and their industrial implementation on the patrol robot at KiloX (Shenzhen).
+
+At the moment, I am actively looking for PhD positions. 
