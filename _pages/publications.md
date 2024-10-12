@@ -6,7 +6,7 @@ nav: true
 nav_order: 2
 ---
 
-\* denotes equal contribution
+\* denotes equal co-authod
 
 <!-- _pages/publications.md -->
 <div class="publications">
