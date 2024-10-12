@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /award/
-title: award
+title: Award
 published: true
 description: Materials for courses you taught. Replace this text with your description.
 nav: true

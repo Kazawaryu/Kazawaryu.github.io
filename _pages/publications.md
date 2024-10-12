@@ -6,7 +6,7 @@ nav: true
 nav_order: 2
 ---
 
-\* denotes equal co-authod
+\* denotes equal co-author
 
 <!-- _pages/publications.md -->
 <div class="publications">
