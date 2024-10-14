@@ -2,78 +2,73 @@
   type: map
   contents:
     - name: Full Name
-      value: Jona Ruthardt
+      value: Zexuan Jia
     - name: Occupation
-      value: Master's Student at University of Amsterdam
+      value: Undergraduate Student at Southern University of Science and Technology
     - name: Nationality
-      value: German
+      value: Chinese
     - name: Languages
-      value: English, German
+      value: English, Chinese
 
 - title: Education
   type: time_table
   contents:
-    - title: MSc Artificial Intelligence
-      institution: University of Amsterdam, Amsterdam (NL)
-      year: 09/22-07/24
+    # - title: MSc Artificial Intelligence
+    #   institution: University of Amsterdam, Amsterdam (NL)
+    #   year: 09/22-07/24
+    #   description:
+    #     - Master of Science, Artificial Intelligence
+    #     - Courses in Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Information Retrieval, Philosophy
+    # - title: IoT and AI Summer School
+    #   institution: Université Sorbonne Paris Nord, Paris (FR)
+    #   year: 07/23
+    - title: B.S. Computer Science and Technology
+      institution: Southern University of Science and Technology, Shenzhen (CN)
+      year: 9/20-06/25
       description:
-        - Master of Science, Artificial Intelligence
-        - Courses in Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Information Retrieval, Philosophy
-    - title: IoT and AI Summer School
-      institution: Université Sorbonne Paris Nord, Paris (FR)
-      year: 07/23
-    - title: BSc Computer Science
-      institution: Baden-Wuerttemberg Cooperative State University, Stuttgart (DE)
-      year: 10/18-09/21
-      description:
-        - Bachelor of Science, Computer Science (IT-Automotive)
-        - Dual study degree in cooperation with Robert Bosch GmbH
-        - Courses in Computer Engineering, Programming, Software Engineering, Automotive Software Development
+        - Intelligent Sensing and Unmanned Systems (ISUS) Lab, supervised by Prof. Dr. Qi Hao and Gongjin Lan
+        - Awarded the National First Prize in the 2023 China College Computer Contest (CCCC)
+        - Courses in Machine Learning, Deep Learning, Embedded Systems, Orient Object Analysis and Design, Computer Vision, etc.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Computer Vision Research Intern
-      institution: TNO - Intelligent Imaging Group, The Hague (NL)
+    - title: Research Assistant (intern)
+      institution: SUSTech - Intelligent Sensing and Unmanned Systems Lab
+      year: 09/23-now
+      description:
+        - Publication of a JCR-Q1 paper, on the topic of "Optimizing Autonomous Driving Datasets: Complexity, Quality, Uncertainty"
+        - Investigation into dataset optimization systems, and 3D perception algorithms for autonomous driving
+        - Extracurricular research project supervised by Prof. Dr. Qi Hao and Gongjin Lan
+    - title: Active Data Acquisition System for Autonomous Driving Simulation
+      institution: SUSTech - Intelligent Sensing and Unmanned Systems Lab
+      year: 09/22-06/23
+      description:
+        - Funded by the Guangdong Student Science and Technology Innovation Fund
+        - Research into how to improve the value of acquisited data for autonomous driving simulation
+        - Awarded the Exellent Award in 19TH Challenge Cup of Science Achievement in China
+    - title: Student Teaching Assistant
+      institution: SUSTech - Department of Computer Science and Engineering
       year: 11/23-now
       description:
-        - Research into how large language models can be utilized for low-resource image classification
-        - Master’s thesis is part of internship at TNO’s Intelligent Imaging Group
-    - title: Research Assistant
-      institution: University of Amsterdam, Amsterdam (NL)
-      year: 04/23-now
-      description:
-        - Investigation into exploiting generalization capabilities of large language models in vision domain
-        - Extracurricular research project supervised by Dr. Yuki Asano (QUVA Lab)
-    - title: Teaching Assistant
-      institution: University of Amsterdam, Amsterdam (NL)
-      year: 11/23-01/24
-      description:
-        - Teaching and supervising tutorials as part of the UvA Deep Learning 1 course (master’s level)
+        - Teaching and supervising tutorials, projects and exams as part of the course Orient Object Analysis and Design, Machine Learning
+        - Assisting in the lab course teaching of pattern design models
+        - Awarded the Exellent Award of the Most Outstanding Student Teaching Assistant in the Fall Semester, 2023
         - Contributing to and grading assignments and exams
-    - title: Data Analyst (Comercial Internal Auditing)
-      institution: Robert Bosch GmbH, Stuttgart (DE)
-      year: 10/21-08/23
+    
+    - title: Robotics AI Algorithm Engineer (intern)
+      institution: KiolX (Shenzhen) Technology Co., Ltd.
+      year: 06/23-09/23
       description:
-        - Supported commercial audits from a data analytics perspective by extracting data from corporate IT systems (e.g., SAP, data lake) and preparing dashboards (Excel, PowerBI) containing important KPIs and visualizations
-        - Participated in Risk Management System audit and developed data analytics concept utilizing data from internal reporting tool
-        - Utilized (un)supervised ML methods to develop and enhance analyses (anomaly detection in transactions, clustering of process and document types, double posting detection) using Python libraries such as scikit-learn or Keras
-        - Developed approach that identified multiple compliance violations based on patterns in previous cases, and reporting framework for anti-money laundry that is actively used by legal division in the role of technical topic owner for fraud analytics
-
-    - title: Dual Study Program Student
-      institution: Robert Bosch GmbH, Stuttgart (DE)
-      year: 10/18-09/21
+        - Development of Ground Segementation Algorithm for patrol robots
+        - Researching the 3D Object Detection Algorithm for patrol robots
+        - Participated in the development of the patrol robot's AI algorithm (ROS)
+    - title: Amatetur Kendo Athlete
+      institution: Shenzhen Kendo Association
+      year: 09/20-now
       description:
-        - Participated in a dual study degree program in the field of study of computer science (specialization IT-Automotive) 
-        - Conducted several multi-month internships and research projects (see "Projects" section) at different business units and departments with an emphasis on artificial intelligence, computer vision, and autonomous driving
-
-    - title: Working Student - Infrastructure and Digitalization
-      institution: bc-competence gmbh, Renningen (DE)
-      year: 06/19-02/21
-      description:
-        - Managed project to adopt mobile device management (MDM) for Apple devices
-        - Set up and maintained IT infrastructure (local network, active directory, SAP, etc.)
-        - Involvement in the application for public research grants for cloud and digitization projects
+        - Obtain 2nd Dan in Kendo, 2022
+        - Participated in the 2021, 2022, 2023 Huanan Kendo Competition
 
 # - title: Open Source Projects
 #   type: time_table
@@ -87,28 +82,34 @@
   contents:
     - year: 2024
       items:
-        - Accapted into MSc Honours Programme offered by the ELLIS Unit Amsterdam
+        - IKDE Co-Author Paper: "Optimizing Autonomous Driving Datasets: Complexity, Quality, Uncertainty"
+    - year: 2023
+      items:
+        - The National First Prize in the 2023 China College Computer Contest (CCCC), project: "Anti-Robust AI Generative Content Jugement System"
+        - The Exellent Award in 19TH Challenge Cup of Science Achievement in China
+        - The Most Outstanding Student Teaching Assistant in the Fall Semester, 2023
+        - Second Runner-up in 6TH Mojian Cup Kendo Competition, Individual Match
     - year: 2022
       items: 
-        - Award for Best Bachelor's Thesis of the 2021 and 2022 academic year in the domain of Artificial Intelligence across all establishments and locations of the Baden-Wuerttemberg Cooperative State University.
-    - year: 2021
+        - Guangdong Student Science and Technology Innovation Fund
+        - Second Runner-up in 5TH Mojian Cup Kendo Competition, Men's Team Match
+        - 2nd Dan in Kendo
+    - year: 2020
       items: 
-        - Award for Best Practical Achievements during Studies
-    - year: 2018
-      items: 
-        - DPG Baccalaureate Prize for exceptional achievements in physics during high school
+        - Second Class Entrance Scholarship of SUSTech
 
-# - title: Academic Interests
-#   type: nested_list
-#   contents:
-#     - title: Topic 1.
-#       items: 
-#         - Description 1.
-#         - Description 2.
-#     - title: Topic 2.
-#       items:
-#         - Description 1.
-#         - Description 2.
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Dataset Optimization
+      items: 
+        - Data Close-Loop
+        - Active Learning
+        - Sence Simulation
+    - title: 3D Perception Algorithms
+      items:
+        - Sparse 3D Encoder-Decoder
+        - 3D Object Detection
 
 # - title: Other Interests
 #   type: list
