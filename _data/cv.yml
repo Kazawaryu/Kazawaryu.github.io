@@ -9,6 +9,11 @@
       value: Chinese
     - name: Languages
       value: English, Chinese
+    - name: Email
+      value: 12011126@mail.sustech.edu.cn
+    - name: Download 
+      # dir: assets/cv/Zexuan_cv.pdf
+      value: <a href="assets/cv/Zexuan_cv.pdf" download>PDF CV</a>
 
 - title: Education
   type: time_table
