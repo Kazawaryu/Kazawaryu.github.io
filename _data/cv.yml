@@ -13,15 +13,6 @@
 - title: Education
   type: time_table
   contents:
-    # - title: MSc Artificial Intelligence
-    #   institution: University of Amsterdam, Amsterdam (NL)
-    #   year: 09/22-07/24
-    #   description:
-    #     - Master of Science, Artificial Intelligence
-    #     - Courses in Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Information Retrieval, Philosophy
-    # - title: IoT and AI Summer School
-    #   institution: Université Sorbonne Paris Nord, Paris (FR)
-    #   year: 07/23
     - title: B.S. Computer Science and Technology
       institution: Southern University of Science and Technology, Shenzhen (CN)
       year: 9/20-06/25
@@ -37,7 +28,7 @@
       institution: SUSTech - Intelligent Sensing and Unmanned Systems Lab
       year: 09/23-now
       description:
-        - Publication of a JCR-Q1 paper, on the topic of "Optimizing Autonomous Driving Datasets: Complexity, Quality, Uncertainty"
+        - Publication of a JCR-Q1 paper as co-author, on the topic of "Optimizing Autonomous Driving Datasets Complexity, Quality, Uncertainty"
         - Investigation into dataset optimization systems, and 3D perception algorithms for autonomous driving
         - Extracurricular research project supervised by Prof. Dr. Qi Hao and Gongjin Lan
     - title: Active Data Acquisition System for Autonomous Driving Simulation
@@ -57,7 +48,7 @@
         - Contributing to and grading assignments and exams
     
     - title: Robotics AI Algorithm Engineer (intern)
-      institution: KiolX (Shenzhen) Technology Co., Ltd.
+      institution: KiloX (Shenzhen) Technology Co., Ltd.
       year: 06/23-09/23
       description:
         - Development of Ground Segementation Algorithm for patrol robots
@@ -85,7 +76,7 @@
         - IKDE Co-Author Paper: "Optimizing Autonomous Driving Datasets: Complexity, Quality, Uncertainty"
     - year: 2023
       items:
-        - The National First Prize in the 2023 China College Computer Contest (CCCC), project: "Anti-Robust AI Generative Content Jugement System"
+        - The National First Prize in the 2023 China College Computer Contest (CCCC), project "Anti-Robust AI Generative Content Jugement System"
         - The Exellent Award in 19TH Challenge Cup of Science Achievement in China
         - The Most Outstanding Student Teaching Assistant in the Fall Semester, 2023
         - Second Runner-up in 6TH Mojian Cup Kendo Competition, Individual Match
