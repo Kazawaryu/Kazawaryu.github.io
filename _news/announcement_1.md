@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-12-14 15:59:00-0400
+date: 2024-10-01 03:00:00-0400
 inline: true
 related_posts: false
 ---
 
-Got to present a poster at NeurIPS 2023 in New Orleans 🎷
+My first acadmic paper has been submitted to the IEEE Knowledge and Data Engineering (IKDE) transcation. 🎷
