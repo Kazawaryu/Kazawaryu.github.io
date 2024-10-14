@@ -21,6 +21,5 @@ I am an undergraduate at the Southern University of Science and Technology, focu
 
 Currently, I am interning as a Research Assistant at the Intelligent Sensing and Unmanned System Lab of Computer Science and Engineering, under the joint supervision of Professor Qi Hao and Research Professor Gongjin Lan, funded by Guangdong Student Science and Technology Innovation Fund.
 
-I have developed the ground segmentation algorithms and their industrial implementation on the patrol robot at KiloX (Shenzhen).
-
+I have developed the ground segmentation algorithms and their industrial implementation on the patrol robot at KiloX (Shenzhen).  
 At the moment, I am actively looking for PhD positions. 
