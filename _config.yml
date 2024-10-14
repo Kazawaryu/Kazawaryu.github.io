@@ -10,6 +10,7 @@ email: 12011126@mail.sustech.edu.cn
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Academic website of Jona Ruthardt.
 footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: artificial-intelligence, computer-vision, research, academic-website, portfolio-website  # add your own keywords or leave empty
 
