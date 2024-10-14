@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: Open-Source Project
+title: Projects
 description: Curated selected open-source projects I have completed independently, including deep learning and software engineering projects.
 nav: true
 nav_order: 4

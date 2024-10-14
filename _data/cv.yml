@@ -17,20 +17,21 @@
       institution: Southern University of Science and Technology, Shenzhen (CN)
       year: 9/20-06/25
       description:
-        - Intelligent Sensing and Unmanned Systems (ISUS) Lab, supervised by Prof. Dr. Qi Hao and Gongjin Lan
+        - Intelligent Sensing and Unmanned Systems (ISUS) Lab, supervised by Prof. Qi Hao and Prof. Gongjin Lan
         - Awarded the National First Prize in the 2023 China College Computer Contest (CCCC)
         - Courses in Machine Learning, Deep Learning, Embedded Systems, Orient Object Analysis and Design, Computer Vision, etc.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Research Assistant (intern)
+    - title: Research Assistant
       institution: SUSTech - Intelligent Sensing and Unmanned Systems Lab
       year: 09/23-now
       description:
         - Publication of a JCR-Q1 paper as co-author, on the topic of "Optimizing Autonomous Driving Datasets Complexity, Quality, Uncertainty"
         - Investigation into dataset optimization systems, and 3D perception algorithms for autonomous driving
-        - Extracurricular research project supervised by Prof. Dr. Qi Hao and Gongjin Lan
+        - Extracurricular research project supervised by Prof. Qi Hao and Gongjin Lan
+
     - title: Active Data Acquisition System for Autonomous Driving Simulation
       institution: SUSTech - Intelligent Sensing and Unmanned Systems Lab
       year: 09/22-06/23
@@ -38,6 +39,7 @@
         - Funded by the Guangdong Student Science and Technology Innovation Fund
         - Research into how to improve the value of acquisited data for autonomous driving simulation
         - Awarded the Exellent Award in 19TH Challenge Cup of Science Achievement in China
+
     - title: Student Teaching Assistant
       institution: SUSTech - Department of Computer Science and Engineering
       year: 11/23-now
@@ -46,8 +48,8 @@
         - Assisting in the lab course teaching of pattern design models
         - Awarded the Exellent Award of the Most Outstanding Student Teaching Assistant in the Fall Semester, 2023
         - Contributing to and grading assignments and exams
-    
-    - title: Robotics AI Algorithm Engineer (intern)
+
+    - title: Robotics AI Algorithm Engineer
       institution: KiloX (Shenzhen) Technology Co., Ltd.
       year: 06/23-09/23
       description:
@@ -61,19 +63,37 @@
         - Obtain 2nd Dan in Kendo, 2022
         - Participated in the 2021, 2022, 2023 Huanan Kendo Competition
 
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 15-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/Kazawaryu/OptAdDatasets">OptAdDatasets</a>
+      year: 09/23-10/24
+      description: 
+        - This project aims to optimize autonomous driving datasets by considering three key features (complexity, quality, and uncertainty) 
+        - The goal is to create a smaller yet equally effective subset by removing redundant and low-quality 3D point cloud data frames
+    - title: <a href="https://github.com/Kazawaryu/CARLA_ADA">CARLA ADA</a>
+      year: 09/23-03/24
+      description: 
+        - Data collection tools with active data acquisition algorithm implemented for CARLA Simulator
+
+    - title: <a href="https://github.com/Kazawaryu/Cat-Chat-Online-Chat-Software">Cat Chat</a>
+      year: 04/23-04/23
+      description: 
+        - An online chat software implemented in Java, with a server and client
+        - Support multiple clients to chat with each other, group chat, and private chat
+        - Support file transfer between clients
+    - title: <a href="https://github.com/Kazawaryu/FPGA-Classic-Mips-pipeline-CPU">FPGA CPU</a>
+      year: 04/23-05/23
+      description: 
+        - A classic MIPS pipeline CPU implemented on FPGA, in Verilog
+        - Support Mips32 instruction set, apply 5-stage pipeline, and cache
 
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2024
       items:
-        - IKDE Co-Author Paper: "Optimizing Autonomous Driving Datasets: Complexity, Quality, Uncertainty"
+        - IKDE Co-Author Paper, "Optimizing Autonomous Driving Datasets Complexity, Quality, Uncertainty"
     - year: 2023
       items:
         - The National First Prize in the 2023 China College Computer Contest (CCCC), project "Anti-Robust AI Generative Content Jugement System"
