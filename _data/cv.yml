@@ -119,6 +119,10 @@
         - Data Close-Loop
         - Active Learning
         - Sence Simulation
+    - title: Control Algorithms
+      items:
+        - Fusion based end-to-end control
+        - ARM Linux robot
     - title: 3D Perception Algorithms
       items:
         - Sparse 3D Encoder-Decoder
