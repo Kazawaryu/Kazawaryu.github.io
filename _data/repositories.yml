@@ -2,7 +2,9 @@ github_users:
   - Kazawaryu
 
 github_repos:
-  - Kazawaryu/OptAdDatasets
+  - Kazawaryu/DLVFF
   - Kazawaryu/Cat-Chat-Online-Chat-Software
   - Kazawaryu/CARLA_ADA
+  - Kazawaryu/OptAdDatasets
   - Kazawaryu/FPGA-Classic-Mips-pipeline-CPU
+  - Kazawaryu/Nike-Run-Errands-Wechat-Mini-Program
