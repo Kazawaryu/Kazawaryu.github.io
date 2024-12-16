@@ -267,7 +267,7 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['autonomous driving', 'code', 'survey', 'math', '​extracurricular'] # these tags will be displayed on the front page of your blog
+display_tags: ['AD', 'code', 'survey', 'math', '​extracurricular'] # these tags will be displayed on the front page of your blog
 display_categories: ['blockquotes'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
