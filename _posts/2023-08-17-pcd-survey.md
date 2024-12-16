@@ -1,8 +1,8 @@
 ---
 layout: post
-title: A short review of point cloud detection algorithms (Simplified Chinese)
+title: A short review of point cloud detection algorithms - From PointNet to VoxelNeXt (Simplified Chinese)
 date: 2023-08-17 11:12:00-0400
-description: 激光雷达 3D 点云目标检测算法综述：从 PointNet 到 VoxelNeXt 
+description: I have no experience translating it into English and publishing it.
 tags: AD
 categories: selfstudy-note
 related_posts: false
@@ -71,10 +71,10 @@ $$mAP = \frac{1}{n} \sum_{k = 1}^{k = n}AP_k$$
 每个类别的匹配和评分都是独立进行的，每个指标都是每个达到 10% 以上的召回水平的累积平均值的平均值。如果特定类别未达到 10\% 的召回率，则该类别的所有 $$TP$$ 错误都将设置为 1。我们定义以下 $$TP$$ 错误：
 
 - 平均平移误差 ATE (Average Translation Error)：二维欧几里得中心距离（以米为单位）；
-- 平均尺度误差 $ASE$ (Average Scale Error)：在对齐中心和方向后计算为$$1 - IOU$$ ；
-- 平均方向误差 $AOE$(Average Orientation Error)：预测与地面实况之间的最小偏航角差异（以弧度为单位）。对于所有类别，方向误差均以 360 度进行评估，障碍除外，障碍物仅以 $$180$$度进行评估。忽略锥体的方向错误；
-- 平均速度误差 $AVE$(Average Velocity Error)：绝对速度误差，以 $$m/s$$ 为单位。障碍物和锥体的速度误差被忽略；
-- 平均属性误差$AAE$(Average Attribute Error)：计算为$$1 - acc$$，其中 $acc$ 是属性分类精度。障碍物和锥体的属性错误被忽略。
+- 平均尺度误差 ASE (Average Scale Error)：在对齐中心和方向后计算为$$1 - IOU$$ ；
+- 平均方向误差 AOE(Average Orientation Error)：预测与地面实况之间的最小偏航角差异（以弧度为单位）。对于所有类别，方向误差均以 360 度进行评估，障碍除外，障碍物仅以 $$180$$度进行评估。忽略锥体的方向错误；
+- 平均速度误差 AVE (Average Velocity Error)：绝对速度误差，以 $$m/s$$ 为单位。障碍物和锥体的速度误差被忽略；
+- 平均属性误差 AAE (Average Attribute Error)：计算为$$1 - acc$$，其中 $acc$ 是属性分类精度。障碍物和锥体的属性错误被忽略。
 
 以上5个标准与mAP加权求和，即nuScenes定义的NDS (nuScenes Detection Score) 标准，即
 
@@ -91,11 +91,51 @@ $$\text{NDS} = 1/10[5\text{mAP}+ {\sum}_{\text{mTP}\in\mathbb{TP}} (1-\min(1, \t
 ## 常见的公开数据集
 
 针对数据获取的困难，往往采用一些常见的开源点云数据集进行训练。
+
 - KITTI 3D：具备1.5w帧数据，8w个标注的目标；
 - nuScenes：具备39w帧雷达，140w个标注目标，23类；
 - Waymo：具备200w帧，2260w个标注目标，4类+23类；
 - Argoverse2：具备1000个场景，每帧图像平均有75个目标物，30个类别；
 - Dense: 不同天气下12000个样本和浓雾中的1500个样本，少见的极端天气数据集；
 - SUScape：南方科技大学与Intel公司合作，在深圳采集的数据集，具有40+类别，有效平均实例密度为nuScene的10倍。
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/blog/pcd-survey/nuScene车.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    nuScenes数据集车辆传感器设置
+</div>
+
+
+如果想要自己制备数据集用来训练模型，往往采用以下的方法。
+
+- 自制真实数据集：机器人采集真实数据，通过 Segement Anything，SUSTechPoint 等工具辅助标注；
+- 仿真采集数据集：Carla 等仿真环境，数据标注来源于对仿真环境真值的处理。目前有一种主动式的方针采集思路CARLA-ADA，能够制备比较有效的仿真数据集。
+
+# 算法介绍
+
+## PointNet-2016
+
+PointNet 和 PointNet++ 最早被提出的一类3D点云分割模型 (Lidar Segmentation)，作为点云目标检测的先驱和奠基。
+
+### 算法摘要
+
+由斯坦福大学于 2016 年发表论文 "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation"，是点云神经网络的鼻祖，它提出了一种网络结构，可以直接从点云中学习特征。
+
+该文章在分类、语义分割两种任务上做出了对比，并给了理论和实验分析。点云的特点其实非常好理解，只要网络抓住以下三个特点，那么它至少就能作为一个能用的 encoder 。
+
+1. 排列不变性：重排一遍所有点的输入顺序，所表示的还是同一个点云数据，网络的输出应该相同。  
+2. 点集之间的交互性：点与点之间有未知的关联性。  
+3. 变换不变性：对于某些变换，例如仿射变换，应用在点云上时，不应该改变网络对点云的理解。
+
+### 创新点
+
+基于以上提到的点云数据三个特点，PointNet 对问题的处理是：
+
+1. 排列不变性：该文章使用了对称函数（Symmetry Function），它的特点是对输入集合的顺序不敏感。这种函数非常多，如 maxpooling，加法，向量点积等。PointNet 采用的是 maxpooling 方法来聚合点集信息。  
+2. 点集之间的交互性：实际上，对称函数的聚合操作就已经得到了全局的信息，此时将点的特征向量与全局的特征向量 concat 起来，就可以让每个点感知到全局的语义信息了，即所谓的交互性。
+3. 变换不变性：只需要对输入做一个标准化操作即可。PointNet 使用网络训练出了 D 维空间的变换矩阵。
 
 
