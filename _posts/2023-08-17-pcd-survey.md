@@ -185,12 +185,114 @@ $$L_{reg}={||I-AA^T||}^2_F$$
     PointNet算法效果
 </div>
 
-### 总结
+### 算法总结
 
 PointNet之所以影响力巨大，并不仅仅是因为它是第一篇点云目标检测文章，更重要的是它的网络很简洁（简洁中蕴含了大量的工作来探寻出简洁这条路）却非常的work，这也就使得它能够成为一个工具，一个为点云表征的encoder工具，应用到更广阔的点云处理任务中。
 
 仅用 MLP+max pooling 就击败了众多SOTA，令人惊讶。另外PointNet在众多细节设计也都进行了理论分析和消融实验验证，保证了严谨性，这也为PointNet后面能够大规模被应用提供了支持。
 
 由于 PointNet 模型只使用了 MLP 和 Maxpooling，所获得的特征是全局的，没有捕获局部结构特在，在细节处理和泛用性都不是很好。为使得特征更关注于“局部”，对 3D 点云进行有重叠的多次降采样，分别对每次采样做特征提取，最后进行拼接，其余思路和 PointNet 类似。
+
+## VoxelNet-2017
+
+### 算法摘要
+
+由 Apple 公司于 2017 年发表论文 "VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection"，是 3D 点云目标检测真正利用好体素化 (Voxel) 的第一篇文章。
+
+在此之前，3D 点云目标检测的主流方法是：(1).数据降维：3D 数据投影成 2D 图像，用传统目标检测方法计算 (2). 整个点云 Voxel 分割后手工设计特征。这些方法对点云数据的利用不足。
+
+VoxelNet 属于单阶段，端到端的点云检测。大致流程为：按空间位置划分 Voxel，然后将 Voxel 内部的点云进行 VFE (Voxl feature encoding) 编码，再接入RPN来生成检测结果，在KITTI数据集上表现出色。
+
+### 创新点
+
+对于 VoxelNet 模型，其突破点和创新点是用 Voxel 描述空间，使用 PointNet 网络对 Voxel 进行特征提取，用该特征代表每个 Voxel ，并放回 3D 空间中，使点云数据有序化。完成三维的空间的特征描述后，对 Voxel 做三维卷积，在得到的特征图上进行目标检测。其实现方式可以说成是，对每个voxel使用PointNet得到voxel的feature。
+
+### 网络结构
+
+VoxelNet 网络分为三个层级：特征学习网络 (Feature Learning Network)、卷积中间层 (Convolutional MIddle Layers)、区域候选网络 (Region Proposal Network)。
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/blog/pcd-survey/voxelnet结构.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    VoxelNet算法网络结构
+</div>
+
+#### 特征学习网络
+
+通过以下五个步骤，提取和学习 3D 点云数据特征。Voxel 化点云、聚合和随机采样很好地解决了“数据点比较稀疏和离散，不好作特征提取”的问题。
+
+1. Voxel 划分：在雷达坐标系中，对于空间 $$D\{X,Y,Z\}$$（针对要检测的物体，会切割出不同的长方体），按$$V\{v_x,v_y,v_z\}$$为单位，划分为小的Voxel，有$$Z'=Z/v_z, Y'=Y/v_y, X'=X/v_x$$。
+2. 聚合：由于雷达数据的离散性，点云在三维空间内的分布不均匀，也有相当可能出现空检，将相邻的Voxel进行聚合，尽量减少这种对网络训练不利的情况出现。
+3. 随机采样：对于聚合后的Voxel，随机在非空的Voxel内采样$$T$$个点。这一步后，将点云数据表示为$$\{N,T,C\}$$，$$N$$为非空Voxel个数，$$T$$为每个Voxel内的随机采样点个数 ，$$C$$为点的特征。对于不足$$T$$个点的 Voxel，采用 “高斯补0” 算法。
+4. VFE（Voxel Feature Enocding）堆叠：
+    1. 对于Voxel，首先数据增强其中的每一个点，计算平均值，再计算每个点的偏移量，与原始数据拼接作为输入（Point-wise Input）；
+    2. 采用PointNet模型的方法，将Voxel中的点通过全连接层（FCN）转化到特征空间 (Point-wise Feature)，在新的特征中挑选出特征值最大的点 (Element-wise Maxpool)，作为每个Voxel的表面形状特征 (Locally Aggregated Feature)； (c). 获取每个Voxel的特征后，最后再拼接 (Point-wise Concatenate)成为更高维的特征 (Point-wise concatenated Feature)。
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/blog/pcd-survey/VFE.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    VFE：体素特征编码器的编码过程
+</div>
+
+特征提取后稀疏特征的表示：上一步中，都是对非空的 voxel 进行处理，这些 voxel 仅仅对应 3D 空间中很小的一部分空间。这里需要将得到的 N 个非空的 voxel 特征重新映射回来源的3D空间中，表示成一个稀疏的 4D张量，$$（C，Z'，Y'，X'）-> (128, 10, 400, 352) $$。这种稀疏的表示方法极大的减少了内存消耗和反向传播中的计算消耗。同时也是 VoxelNet 为了效率而实现的重要步骤。
+
+#### 卷积中间层
+
+简单来讲，用以下三个三维卷积核对 Voxel 化的点云进行卷积，每个卷积后都接 BN 层 (Batch Normalization) 和 ReLU 层，增强传递防止梯度消失，归一化加速网络收敛。通过卷积中间层，能够提升感受视野
+
+$$Conv3D_1(128, 64, 3, (2,1,1), (1,1,1))$$
+$$Conv3D_2(64, 64, 3, (1,1,1), (0,1,1))，$$
+$$Conv3D_3(64, 64, 3, (2,1,1), (1,1,1))$$
+
+通过中间层运算之后，4D的tensor尺寸为（拿car detection为例，62*2*400*352），然后会进行reshape操作，将特征图变成 128*400*352便于后续使用RPN。
+
+#### 区域候选层
+
+RPN层的概念在FasterRCNN中就被提出来，主要是用于根据特征图中学习到的特征和结合anchor来生成对应的预测结果。VoxelNet的预测头，类似于SSD和YOLO那一类的目标检测算法种的头预测。在 FrCNN 中 RPN 在每个像素和像素的中心点位置根据 anchor 的设置，预测了一个 anchor 属于类别，以及针对该 anchor 的粗回归调整。在VoxelNet 中也不例外。
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/blog/pcd-survey/RPN.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    RPN：区域候选网络的特征堆叠过程
+</div>
+
+VoxelNet 的 RPN 结构在经过前面的 Convolutional middle layers 和 tensor 重组得到的特征图后，对这个特征图分别的进行了多次下采样，然后再将不同下采样的特征进行反卷积操作，变成相同大小的特征图。再拼接这些来自不同尺度的特征图，用于最后的检测。给人的感觉类似图像目标检测的 NECK 模块中 PAN，只不过这里只有一张特征图。将不同尺度的信息融合在了一起。这里每一层卷积都是二维的卷积操作，每个卷积后面都接一个BN和RELU层。输出的结果是一个分类预测和 anchor 回归预测的结果。
+
+### 锚点选择与损失函数
+
+锚点的选择采用（拿car detection举例）选取 $$l^a=3.9,w^a=1.6,h^a=1.59,z^a=-1.0,\theta=[0,90]$$。定义$$\{a_i^{pos}\}_{i=1...N_{pos}}$$为正样本锚点，$$\{a_i^{neg}\}_{i=1...N_{neg}}$$为负样本锚点。检测框被参数化成 $$u=(x,y,z,l,w,h,\theta)$$。
+
+Anchol与真实值之间的匹配方案为（拿car detection举例），看其在BEV下面的IOU值，当IOU最大时为正样本，或者$$IOU > 0.6$$ 为正样本，$IOU<0.45$为负样本，介于$$0.45$$与$$0.6$$之间的丢弃掉。最终的残差形式为下面的函数，其中前两项为分类的损失，后一项为框的拟合程度损失。
+
+$$L=\alpha\frac{1}{N_{pos}}\sum_{i}L_{cls}(P_i^{pos}, 1)+\beta\frac{1}{N_{neg}}\sum_jL_{cls}(p_j^neg, 0)+\frac{1}{N_{pos}}\sum_iL_{reg}(\textbf{u}_i,\textbf{u}_i^*)$$
+
+训练模型前，论文对数据进行了一定程度的数据增强。对真实的3D标注框，进行旋转，平移，同时去除的碰撞的情况。以及对3D标注框，整体点云分别进行$$[0.95~1.05]$$之间不同的缩放。
+
+### 模型效果
+
+数据援引论文原文，训练和测试均在KITTI上进行，指标为ACC。
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/blog/pcd-survey/voxelnet效果.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    VoxelNet模型在KITTI数据集上的效果
+</div>
+
+### 算法总结
+
+VoxelNet 模型属于比较早期的将点云转为 Voxel 作处理的模型（2017），突破性地真正发挥 Voxel 分割点云的作用。此后，在这个思路上，对点云目标检测的效果进行了许多改进。更关键的，论文提出了一种基于体素的编码器VFE（Voxel Feature Encoder），日后几乎所有的3D目标检测模型都采用VFE作为处理点云的第一个步骤，这足以说明VoxelNet所产生的影响之深。
+
 
 
