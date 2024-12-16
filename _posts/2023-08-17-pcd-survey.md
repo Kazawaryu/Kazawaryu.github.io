@@ -139,3 +139,58 @@ PointNet 和 PointNet++ 最早被提出的一类3D点云分割模型 (Lidar Segm
 3. 变换不变性：只需要对输入做一个标准化操作即可。PointNet 使用网络训练出了 D 维空间的变换矩阵。
 
 
+### 网络结构
+
+PointNet 网络分为两个部分：分类网络 (Classifiction Network) 和分割网络 (Segmentation Network)。
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/blog/pcd-survey/pointnet-structure.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    PointNet算法网络结构
+</div>
+
+#### 分类网络
+
+基本思路：分类网络以 $$n$$ 个点作为输入，对输入做特征变换（变换矩阵），将结果输入给 MLP 做回归。将上一步的结果放在特征空间中做特征变换，再输入给 MLP 回归，对得到的输出进行 Maxpool 挑选最大值，作为整个 3D 点云的全局特征。
+分类网络设计 Gloabl Feature，这一步称为 Symmetry Function for Unordered Input，对输入做处理。具体来讲，用一个简单的对称函数聚集每个点的信息：
+
+$$f(\{x_1,...,x_2\}) \approx g(h(x_1),...,h(x_n))$$
+
+对此过程数学建模，$$f$$为目标，$g$ 为设计的对称函数。从公式来看，其基本思路是：对各个点$$x_k$$分别做$h$处理，再将所有处理后的点交由函数$g$处理，以实现排列不变性。在实现中，$$h$$为 MLP，$$g$$为 maxpooling。
+
+#### 分割网络
+
+基本思路：分割网络将经过特征空间变换后的点局部特征 (local) 与全局特征 (global) 拼接，输入给 MLP 处理，对每一个点进行分类。
+
+分割网络获取 Point-wise Feature，这一步称为 Local and Global Information Aggregation，对两个不同维度的特征做拼接。
+
+但由于特征空间中的变换矩阵维度远远大于空间中的变换矩阵维度，在softmax训来时，用一个正则化项，将特这个变换矩阵限制为近似的正交矩阵，即输出尺度归一化。这一步称为 Joint Alignment Network：
+
+$$L_{reg}={||I-AA^T||}^2_F$$
+
+其中$$A$$是维度较小网络预测的特征对齐矩阵。消融实验证明该步骤可以有效优化，使模型效果更稳定。
+
+### 模型效果
+数据援引论文原文，指标为点的 mIoU(\%)。
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/blog/pcd-survey/pointnet效果.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    PointNet算法效果
+</div>
+
+### 总结
+
+PointNet之所以影响力巨大，并不仅仅是因为它是第一篇点云目标检测文章，更重要的是它的网络很简洁（简洁中蕴含了大量的工作来探寻出简洁这条路）却非常的work，这也就使得它能够成为一个工具，一个为点云表征的encoder工具，应用到更广阔的点云处理任务中。
+
+仅用 MLP+max pooling 就击败了众多SOTA，令人惊讶。另外PointNet在众多细节设计也都进行了理论分析和消融实验验证，保证了严谨性，这也为PointNet后面能够大规模被应用提供了支持。
+
+由于 PointNet 模型只使用了 MLP 和 Maxpooling，所获得的特征是全局的，没有捕获局部结构特在，在细节处理和泛用性都不是很好。为使得特征更关注于“局部”，对 3D 点云进行有重叠的多次降采样，分别对每次采样做特征提取，最后进行拼接，其余思路和 PointNet 类似。
+
+
