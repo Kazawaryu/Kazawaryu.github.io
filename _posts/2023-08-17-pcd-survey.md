@@ -1,13 +1,15 @@
 ---
 layout: post
-title: A short review of point cloud detection algorithms - From PointNet to VoxelNeXt (Simplified Chinese)
+title: A Review of 3D Point Cloud Detection Algorithms - from PointNet to VoxelNeXt
 date: 2023-08-17 11:12:00-0400
-description: I have no experience translating it into English and publishing it.
+description: Please not that it is written in Simplified Chinese
 tags: AD survey
 categories: selfstudy-note
 related_posts: false
 published: true
 ---
+
+> This article introduces some common 3D point cloud detection algorithms (as of August 2023). The content comes from personal understanding and may have some problems.
 
 # 1. 摘要
 
@@ -362,7 +364,7 @@ CenterPoint 网络分为三个层级：3D 骨骼网络 (3D Backbone Network)、�
 $$L_{score}=-I_t\log(\hat{I}_t)-(1-I_t)\log(1-\hat{I}_t)$$
 $$I=min(1,max(0,2 \times IoU_t-0.5))$$
 
-在推理阶段，置信度的计算方式如下，其中$\hat{Y}_t=max_{0\le k \le K}\hat{Y}_{p, k}$和$\hat{I}_t$分别表示 stage one 和 stage two 对目标$t$的置信度。
+在推理阶段，置信度的计算方式如下，其中$$\hat{Y}_t=max_{0\le k \le K}\hat{Y}_{p, k}$$和$$\hat{I}_t$$分别表示 stage one 和 stage two 对目标$$t$$的置信度。
 
 $$\hat{Q}_t=\sqrt{\hat{Y}_t\times\hat{I}_t} $$
 
@@ -440,12 +442,12 @@ $$P_c=P_4\cup(P_5' \cup P_6')$$
 
 3D 体素映射到 2D：这一步骤中，将稀疏特征转换为密集特征，压缩$$z$$方向，将 3D 体素特征压缩为密集的 2D 特征图。VoxelNet 中发现，2D 的稀疏特征对预测有效，不单单只是抑制模型收敛。在 VoxelNeXt 中，对高度的压缩只是以体素为对单位，映射在统一平面上，对于同一区域的特征累加。数学建模以上过程，如下所示：
 
-$$\bar{P}_c=\{(x_p,y_p)|p\in P_c\}$$
-$$\bar{F}_c=\{\sum_{p\in S_{\bar{p}}}{f_p}  | \bar{p}\in\bar{P}_c\}$$
+$$\bar{P}_c=\{(x_p,y_p)\|p\in P_c\}$$
+$$\bar{F}_c=\{\sum_{p\in S_{\bar{p}}}{f_p}  \| \bar{p}\in\bar{P}_c\}$$
 
-其中$$S_{\bar{p}}=\{p|x_p=x_{\bar{p}},y=y_{\bar{p}, p\in P_c} \}$$，包含映射在 2D 平面上的体素。
+其中$$S_{\bar{p}}=\{p\|x_p=x_{\bar{p}},y=y_{\bar{p}, p\in P_c} \}$$，包含映射在 2D 平面上的体素。
 
-体素裁减：由于网络完全基于体素本身，而 3D 点云中含有大量冗余的背景点，对预测有很大的不利，因此需要对映射后的 2D 体素做裁剪。沿着下采样层逐渐修剪不相关的体素，根据SPS Conv，抑制了具有小特征量值的体素的膨胀。将抑制比设为0.5，仅对特征幅度$|f_p|$（在通道维度上平均）排在前一半的体素进行扩张。
+体素裁减：由于网络完全基于体素本身，而 3D 点云中含有大量冗余的背景点，对预测有很大的不利，因此需要对映射后的 2D 体素做裁剪。沿着下采样层逐渐修剪不相关的体素，根据SPS Conv，抑制了具有小特征量值的体素的膨胀。将抑制比设为0.5，仅对特征幅度$$\|f_p\|$$（在通道维度上平均）排在前一半的体素进行扩张。
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -501,10 +503,10 @@ $$\bar{F}_c=\{\sum_{p\in S_{\bar{p}}}{f_p}  | \bar{p}\in\bar{P}_c\}$$
 
 准备两组数据集$$D_{sim}$$和$$D_{real}$$，分别在仿真环境Carla和真实环境（设备Velodyne—VLP16，园区内）采集。分别训练VoxelNet、PointPillar、CenterPoint以及VoxelNeXt模型(epochs=160, batch size=18，split=0.2)。观察训练时间以及表现效果，数据集的详细信息如下：
 
-| **Dataset** | **体积** | **数据帧** | **样本个数** | **样本种类**                             | **采集环境** |
+| **Dataset** | **Size** | **Frame** | **Instances** | **class**                             | **detail** |
 |-------------|--------|---------|----------|--------------------------------------|----------|
-| $D_{sim}$   | 20.03G | 3971    | 75294    | Car, Truck, Van, Pedestrian, Cyclist | 城镇、高速公路  |
-| $D_{real}$  | 16.77G | 4068    | 66329    | Vehicle, Pedestrian                  | 封闭园区     |
+| $$D_{sim}$$   | 20.03G | 3971    | 75294    | Car, Truck, Van, Pedestrian, Cyclist | city, highway |
+| $$D_{real}$$  | 16.77G | 4068    | 66329    | Vehicle, Pedestrian                  | Campus     |
 
 ## 4.2 实验设备
 
@@ -529,11 +531,11 @@ $$\bar{F}_c=\{\sum_{p\in S_{\bar{p}}}{f_p}  | \bar{p}\in\bar{P}_c\}$$
 
 以下为真实采集数据集下实验结果。
 
-| **样本类**    | **VoxelNet** | **PointPillar** | **CenterPoint** | **VoxelNeXt** |
+| **class**    | **VoxelNet** | **PointPillar** | **CenterPoint** | **VoxelNeXt** |
 |------------|--------------|-----------------|-----------------|---------------|
 | Vehicle    | 22.03        | 26.75           | extbf{28.09*}   | 15.92         |
 | Pedestrian | 9.51         | 11.20           | \textbf{14.69}  | 4.32          |
-| 训练时间       | 3h04min      | 3h45min         | 4h12min         | 6h27min       |
+| time cost       | 3h04min      | 3h45min         | 4h12min         | 6h27min       |
 
 ## 4.4 结果分析
 
