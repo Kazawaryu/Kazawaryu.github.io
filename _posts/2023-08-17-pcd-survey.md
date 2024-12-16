@@ -50,7 +50,7 @@ published: true
 
 ### 2.3.1 Metrics based on Average Precision
 
-检测算法的评估，一般采用 IoU (Inner of Union) 作为评价 BBox 和 Ground-Truth 的重合程度。数学建模为，对于同一个对象$O$，取算法预测框$D$与真值框$G$ (Ground Truth) ，按如下公式计算：
+检测算法的评估，一般采用 IoU (Inner of Union) 作为评价 BBox 和 Ground-Truth 的重合程度。数学建模为，对于同一个对象$$O$$，取算法预测框$D$与真值框$$G$$ (Ground Truth) ，按如下公式计算：
 
 $$IoU = \frac{area(D)\cap area(G)}{area(D)\cup area(G)} $$
 
@@ -521,11 +521,11 @@ $$\bar{F}_c=\{\sum_{p\in S_{\bar{p}}}{f_p}  \| \bar{p}\in\bar{P}_c\}$$
 
 | **样本类**    | **VoxelNet** | **PointPillar** | **CenterPoint** | **VoxelNeXt** |
 |------------|--------------|-----------------|-----------------|---------------|
-| Car        | 44.68        | 60.28           | extbf{64.09}    | 24.09         |
-| Truck      | 52.39        | \textbf{71.27*} | 68.32           | 38.23         |
-| Van        | 52.46        | 54.11           | \textbf{71.09}  | 30.48         |
-| Pedestrian | 30.22        | 40.87           | \textbf{48.05}  | 9.71          |
-| Cyclist    | 29.14        | \textbf{56.30}  | 52.26           | 12.33         |
+| Car        | 44.68        | 60.28           | **64.09**    | 24.09         |
+| Truck      | 52.39        | **71.27** | 68.32           | 38.23         |
+| Van        | 52.46        | 54.11           | **71.09**  | 30.48         |
+| Pedestrian | 30.22        | 40.87           | **48.05**  | 9.71          |
+| Cyclist    | 29.14        | **56.30**  | 52.26           | 12.33         |
 | 训练时间       | 3h33min      | 4h17min         | 5h39min         | 6h13min       |
 
 
@@ -533,8 +533,8 @@ $$\bar{F}_c=\{\sum_{p\in S_{\bar{p}}}{f_p}  \| \bar{p}\in\bar{P}_c\}$$
 
 | **class**    | **VoxelNet** | **PointPillar** | **CenterPoint** | **VoxelNeXt** |
 |------------|--------------|-----------------|-----------------|---------------|
-| Vehicle    | 22.03        | 26.75           | extbf{28.09*}   | 15.92         |
-| Pedestrian | 9.51         | 11.20           | \textbf{14.69}  | 4.32          |
+| Vehicle    | 22.03        | 26.75           | **28.09**   | 15.92         |
+| Pedestrian | 9.51         | 11.20           | **14.69**  | 4.32          |
 | time cost       | 3h04min      | 3h45min         | 4h12min         | 6h27min       |
 
 ## 4.4 结果分析
