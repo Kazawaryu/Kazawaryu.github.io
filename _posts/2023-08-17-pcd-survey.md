@@ -4,7 +4,7 @@ title: A Review of 3D Point Cloud Detection Algorithms - from PointNet to VoxelN
 date: 2023-08-17 11:12:00-0400
 description: Please note that it is written in Simplified Chinese
 tags: AD survey
-categories: selfstudy-note
+categories: note
 thumbnail: assets/img/blog/pcd-survey/引言.png
 related_posts: false
 published: true

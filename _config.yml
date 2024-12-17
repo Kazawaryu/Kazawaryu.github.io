@@ -268,7 +268,7 @@ jekyll-archives:
     category: '/blog/category/:name/'
 
 display_tags: ['AD', 'survey', 'math'] # these tags will be displayed on the front page of your blog
-display_categories: ['extracurricular', 'course-work', 'selfstudy-note'] # these categories will be displayed on the front page of your blog
+display_categories: ['extracurricular', 'course-work', 'note'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
