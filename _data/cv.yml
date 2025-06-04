@@ -10,11 +10,18 @@
     - name: Languages
       value: English, Chinese
     - name: Email
-      value: 12011126@mail.sustech.edu.cn
+      value: zexuan.jia@uga.edu
     
 - title: Education
   type: time_table
   contents:
+    - title: Ph.D. Mechanical Engineering
+      institution: University of Georgia, Athens (USA)
+      year: 09/25-prospective
+      description:
+        - Admitted with a full scholarship
+        - Research in the field of Machine Learning, ccybernetics, and autonomous driving
+
     - title: B.S. Computer Science and Technology
       institution: Southern University of Science and Technology, Shenzhen (CN)
       year: 9/20-06/25
@@ -28,9 +35,9 @@
   contents:
     - title: Research Assistant
       institution: SUSTech - Intelligent Sensing and Unmanned Systems Lab
-      year: 09/23-now
+      year: 09/23-01/25
       description:
-        - Publication of a JCR-Q1 paper as co-author, on the topic of "Optimizing Autonomous Driving Datasets Complexity, Quality, Uncertainty"
+        - Publication of a JCR-Q1 paper as co-author, on the topic of "Optimizing Autonomous Driving Datasets Complexity, Quality, Uncertainty" (under review)
         - Investigation into dataset optimization systems, and 3D perception algorithms for autonomous driving
         - Extracurricular research project supervised by Prof. Qi Hao and Gongjin Lan
 
@@ -44,26 +51,12 @@
 
     - title: Student Teaching Assistant
       institution: SUSTech - Department of Computer Science and Engineering
-      year: 11/23-now
+      year: 11/23-01/25
       description:
-        - Teaching and supervising tutorials, projects and exams as part of the course Orient Object Analysis and Design, Machine Learning
+        - Teaching courses, Orient Object Analysis and Design (OOAD), Machine Learning (advanced class)
         - Assisting in the lab course teaching of pattern design models
         - Awarded the Exellent Award of the Most Outstanding Student Teaching Assistant in the Fall Semester, 2023
         - Contributing to and grading assignments and exams
-
-    - title: Robotics AI Algorithm Engineer
-      institution: KiloX (Shenzhen) Technology Co., Ltd.
-      year: 06/23-09/23
-      description:
-        - Development of Ground Segementation Algorithm for patrol robots
-        - Researching the 3D Object Detection Algorithm for patrol robots
-        - Participated in the development of the patrol robot's AI algorithm (ROS)
-    - title: Amatetur Kendo Athlete
-      institution: Shenzhen Kendo Association
-      year: 09/20-now
-      description:
-        - Obtain 2nd Dan in Kendo, 2022
-        - Participated in the 2021, 2022, 2023 Huanan Kendo Competition
 
 - title: Open Source Projects
   type: time_table
@@ -93,9 +86,13 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2025
+      items:
+        - The Best Oral Presentation Award in the 2025 IEEE the 5th International Conference on Computer Communication and Artificial Intelligence (CCAI)
+        - Been admitted to the University of Georgia, USA, for a Ph.D. program in Machinical Engineering with a full scholarship
     - year: 2024
       items:
-        - IKDE Co-Author Paper, "Optimizing Autonomous Driving Datasets Complexity, Quality, Uncertainty"
+        - Co-Author Paper, "Optimizing Autonomous Driving Datasets for perception, Complexity, Quality, Uncertainty"
     - year: 2023
       items:
         - The National First Prize in the 2023 China College Computer Contest (CCCC), project "Anti-Robust AI Generative Content Jugement System"
@@ -106,10 +103,7 @@
       items: 
         - Guangdong Student Science and Technology Innovation Fund
         - Second Runner-up in 5TH Mojian Cup Kendo Competition, Men's Team Match
-        - 2nd Dan in Kendo
-    - year: 2020
-      items: 
-        - Second Class Entrance Scholarship of SUSTech
+        - 2nd Dan in Kendo, Guangzhou Kendo Association, CKOU
 
 - title: Academic Interests
   type: nested_list
@@ -128,7 +122,8 @@
         - Sparse 3D Encoder-Decoder
         - 3D Object Detection
 
-# - title: Other Interests
-#   type: list
-#   contents:
-#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+- title: Others
+  type: list
+  contents:
+    - <u>Hobbies:</u> Kendo, Badminton, Video Games, Anime, Manga
+    - <u>Skills:</u> C++, Python, Java, Verilog, Git, Linux, Docker
