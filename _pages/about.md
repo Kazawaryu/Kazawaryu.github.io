@@ -19,6 +19,6 @@ social: true  # includes social icons at the bottom of the page
 
 I’m an undergraduate at the Southern University of Science and Technology, passionately exploring 3D perception algorithms, optimal control, and optimizing datasets to advance the exciting field of autonomous driving.
 
-I am currently interning as a Research Assistant at the Intelligent Sensing and Unmanned System Lab within the Computer Science and Engineering department. My internship is under the joint supervision of Professor Qi Hao and Research Professor Gongjin Lan, and it is funded by the Guangdong Student Science and Technology Innovation Fund.
+I have interned as a Research Assistant for one and a half years, at the Intelligent Sensing and Unmanned System Lab within the Computer Science and Engineering department. My internship is under the joint supervision of Professor Qi Hao and Research Professor Gongjin Lan.
 
-I am actively pursuing opportunities for PhD positions that align with my research interests and career goals.
+I have been admitted to the University of Georgia for a Ph.D. in Mechanical Engineering, starting in Fall 2025. I am excited to continue my research journey there.

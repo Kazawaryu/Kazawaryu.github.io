@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Zexuan
 middle_name: 
 last_name: Jia
-email: 12011126@mail.sustech.edu.cn
+email: zexuan.jia@uga.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Academic website of Zexuan Jia. 
 footer_text: >
@@ -180,7 +180,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 3 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
