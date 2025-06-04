@@ -17,7 +17,7 @@
   contents:
     - title: Ph.D. Mechanical Engineering
       institution: University of Georgia, Athens (USA)
-      year: 09/25-prospective
+      year: 09/25-present
       description:
         - Admitted with a full scholarship
         - Research in the field of Machine Learning, ccybernetics, and autonomous driving
@@ -40,14 +40,6 @@
         - Publication of a JCR-Q1 paper as co-author, on the topic of "Optimizing Autonomous Driving Datasets Complexity, Quality, Uncertainty" (under review)
         - Investigation into dataset optimization systems, and 3D perception algorithms for autonomous driving
         - Extracurricular research project supervised by Prof. Qi Hao and Gongjin Lan
-
-    - title: Active Data Acquisition System for Autonomous Driving Simulation
-      institution: SUSTech - Intelligent Sensing and Unmanned Systems Lab
-      year: 09/22-06/23
-      description:
-        - Funded by the Guangdong Student Science and Technology Innovation Fund
-        - Research into how to improve the value of acquisited data for autonomous driving simulation
-        - Awarded the Exellent Award in 19TH Challenge Cup of Science Achievement in China
 
     - title: Student Teaching Assistant
       institution: SUSTech - Department of Computer Science and Engineering
