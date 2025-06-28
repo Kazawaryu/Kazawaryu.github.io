@@ -18,17 +18,10 @@
     - title: Ph.D. Mechanical Engineering
       institution: University of Georgia, Athens (USA)
       year: 09/25-present
-      description:
-        - Admitted with a full scholarship
-        - Research in the field of Machine Learning, ccybernetics, and autonomous driving
 
     - title: B.S. Computer Science and Technology
       institution: Southern University of Science and Technology, Shenzhen (CN)
-      year: 9/20-06/25
-      description:
-        - Intelligent Sensing and Unmanned Systems (ISUS) Lab, supervised by Prof. Qi Hao and Prof. Gongjin Lan
-        - Awarded the National First Prize in the 2023 China College Computer Contest (CCCC)
-        - Courses in Machine Learning, Deep Learning, Embedded Systems, Orient Object Analysis and Design, Computer Vision, etc.
+      year: 9/20-07/25
 
 - title: Experience
   type: time_table
