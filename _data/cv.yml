@@ -16,12 +16,12 @@
   type: time_table
   contents:
     - title: Ph.D. Mechanical Engineering
-      institution: University of Georgia, Athens (USA)
-      year: 09/25-present
+      institution: University of Georgia, Athens, GA, USA
+      year: Present
 
     - title: B.S. Computer Science and Technology
-      institution: Southern University of Science and Technology, Shenzhen (CN)
-      year: 9/20-07/25
+      institution: Southern University of Science and Technology, Shenzhen, China
+      year: 06/25
 
 - title: Experience
   type: time_table
@@ -93,21 +93,19 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Dataset Optimization
-      items: 
-        - Data Close-Loop
-        - Active Learning
-        - Sence Simulation
-    - title: Control Algorithms
+    - title: Control Algorithms in Autonomous Driving
       items:
         - Fusion based end-to-end control
         - ARM Linux robot
     - title: 3D Perception Algorithms
       items:
-        - Sparse 3D Encoder-Decoder
+        - Sparse 3D Perception
         - 3D Object Detection
+        - Dataset Optimization
 
 - title: Hobbies
   type: list
   contents:
-    - Kendo, Badminton, Video Games, Anime, Manga, Violin, J-POP
+    - Sleep, Video Games, Anime, Manga
+    - Kendo, Badminton
+    - Violin, J-POP
