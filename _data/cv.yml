@@ -4,11 +4,11 @@
     - name: Full Name
       value: Zexuan Jia
     - name: Occupation
-      value: Undergraduate Student at Southern University of Science and Technology
+      value: Undergraduate Student in Computer Science and Technology, Research Assistant in Intelligent Sensing and Unmanned Systems Lab, Southern University of Science and Technology
     - name: Nationality
       value: Chinese
     - name: Languages
-      value: English (fluent), Chinese (native), Japanese (basic)
+      value: English, Chinese, Japanese
     - name: Email
       value: zexuan.jia@uga.edu
     
@@ -107,8 +107,7 @@
         - Sparse 3D Encoder-Decoder
         - 3D Object Detection
 
-- title: Others
+- title: Hobbies
   type: list
   contents:
-    - <u>Hobbies:</u> Kendo, Badminton, Video Games, Anime, Manga
-    - <u>Skills:</u> C++, Python, Java, Verilog, Git, Linux, Docker
+    - Kendo, Badminton, Video Games, Anime, Manga, Violin, J-POP
