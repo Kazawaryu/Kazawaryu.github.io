@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Awarded the Highest Honors in Computer Science and Engineering for outstanding academic achievement in the undergraduate program 🎷
+Awarded the Highest Honors in Computer Science and Engineering & The Best Graduate Thesis Awards, for outstanding academic achievement in the undergraduate program 🎷

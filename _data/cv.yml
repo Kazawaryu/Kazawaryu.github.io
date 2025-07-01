@@ -72,7 +72,7 @@
   contents:
     - year: 2025
       items:
-        - The Highest Honors in Computer Science and Engineering, for outstanding academic achievement in the undergraduate program
+        - The Highest Honors in Computer Science and Engineering & The Best Graduate Thesis Awards, for outstanding academic achievement in the undergraduate program
         - The Best Oral Presentation Award in the 2025 IEEE the 5th International Conference on Computer Communication and Artificial Intelligence (CCAI)
         - Been admitted to the University of Georgia, USA, for a Ph.D. program in Machinical Engineering with a full scholarship
     - year: 2024
@@ -89,19 +89,6 @@
         - Guangdong Student Science and Technology Innovation Fund
         - Second Runner-up in 5TH Mojian Cup Kendo Competition, Men's Team Match
         - 2nd Dan in Kendo, Guangzhou Kendo Association, CKOU
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Control Algorithms in Autonomous Driving
-      items:
-        - Fusion based end-to-end control
-        - ARM Linux robot
-    - title: 3D Perception Algorithms
-      items:
-        - Sparse 3D Perception
-        - 3D Object Detection
-        - Dataset Optimization
 
 - title: Hobbies
   type: list
