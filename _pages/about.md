@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: B.E. Computer Science and Technology @ SUSTech
+subtitle: Ph.D. student Mechanical Engineering @ UGA
 
 profile:
   align: right
@@ -17,8 +17,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I have a Bachelor's degree in Computer Science and Technology from Southern University of Science and Technology (SUSTech), where I graduated in July 2025. During my undergraduate studies, I passionately explored 3D perception algorithms, optimal control, and optimizing datasets to advance the exciting field of autonomous driving.
+I am the first year Ph.D. student majoring in mechanical engineering at the University of Georgia. During my undergraduate studies at Southern University of Science and Technology (SUSTech), I passionately explored 3D perception algorithms, optimal control, and optimizing datasets to advance the exciting field of autonomous driving.
 
 I have interned as a Research Assistant for one and a half years, at the Intelligent Sensing and Unmanned System Lab within the Computer Science and Engineering department.
-
-I have been admitted to the University of Georgia for a Ph.D. in Mechanical Engineering, starting in Fall 2025. I am excited to continue my research journey there.
