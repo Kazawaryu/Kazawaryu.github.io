@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://jonaruthardt.github.io/sitemap.xml
+Sitemap: https://kazawaryu.github.io/sitemap.xml
