@@ -48,3 +48,89 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+.project-section {
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-section-sub {
+  color: var(--global-text-color-light);
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  border-left: 3px solid var(--global-theme-color);
+  background-color: var(--global-card-bg-color);
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+  .project-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+  }
+
+  .project-meta {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .project-summary {
+    margin-bottom: 0.5rem;
+  }
+
+  .project-image {
+    display: flex;
+    align-items: center;
+  }
+
+  .project-links {
+    margin-top: 0.5rem;
+
+    .btn {
+      margin: 0 0.25rem 0.25rem 0;
+      padding: 0 0.5rem;
+      font-size: 0.75rem;
+      border: 1px solid var(--global-text-color-light);
+      color: var(--global-text-color);
+      &:hover {
+        color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+.project-bullets {
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+  li {
+    margin-bottom: 0.2rem;
+  }
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.project-tag {
+  font-size: 0.75rem;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  color: var(--global-theme-color);
+  border: 1px solid var(--global-theme-color);
+}
+
+.project-award {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #c9a227;
+  margin-bottom: 0.5rem;
+}
+

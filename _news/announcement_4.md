@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Awarded the National Frist Prize of China College Computer Contest (CCCC), 2023 🙌
+Awarded the National First Prize of China College Computer Contest (CCCC), 2023 🙌

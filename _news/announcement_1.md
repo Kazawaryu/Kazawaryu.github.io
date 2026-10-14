@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My first acadmic paper has been submitted to the IEEE Knowledge and Data Engineering (IKDE) transcation. 🎷
+My first academic paper has been submitted to IEEE Transactions on Knowledge and Data Engineering (TKDE). 🎷

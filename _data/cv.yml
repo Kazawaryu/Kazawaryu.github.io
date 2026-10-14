@@ -4,91 +4,124 @@
     - name: Full Name
       value: Zexuan Jia
     - name: Occupation
-      value: Ph.D. Student in Mechanical Engineering, Research Assistant in Mobility Systems Control (MSC) Laboratory, University of Georgia
-    - name: Nationality
-      value: Chinese
+      value: Ph.D. Student in Mechanical Engineering, Mobility Systems Control (MSC) Laboratory, University of Georgia
+    - name: Address
+      value: 200 D.W. Brooks Drive, Athens, GA 30602
     - name: Languages
       value: English, Chinese, Japanese
     - name: Email
       value: zexuan.jia@uga.edu
-    
+
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. Mechanical Engineering
+    - title: Ph.D. Student in Mechanical Engineering
       institution: University of Georgia, Athens, GA, USA
-      year: Present
+      year: 08/2025 - Present
+      description:
+        - <a href="https://yunlishao.github.io/">Mobility Systems Control (MSC) Laboratory</a>, advised by Dr. Yunli Shao
 
-    - title: B.E. Computer Science and Technology
+    - title: B.E. in Computer Science and Engineering
       institution: Southern University of Science and Technology, Shenzhen, China
-      year: 06/2025
+      year: 09/2020 - 07/2025
+      description:
+        - Highest Honors in Computer Science and Engineering; The Best Graduate Thesis Award
+        - Student Teaching Assistant for Object-Oriented Analysis and Design and Machine Learning (Most Outstanding TA, Fall 2023)
 
-- title: Experience
+- title: Publications
   type: time_table
   contents:
-    - title: Research Assistant (Intern)
-      institution: SUSTech - Intelligent Sensing and Unmanned Systems Lab
-      year: 09/23-01/25
+    - title: Optimizing Autonomous Driving Datasets for Detection with Smaller Data Sizes and Equivalent Effectiveness
+      institution: IEEE Transactions on Emerging Topics in Computational Intelligence (T-ETCI), JCR-Q1
+      year: Accepted, 09/2026
       description:
-        - Publication of a JCR-Q1 paper as co-author, on the topic of "Optimizing Autonomous Driving Datasets Complexity, Quality, Uncertainty" (under review)
-        - Investigation into dataset optimization systems, and 3D perception algorithms for autonomous driving
-        - Extracurricular research project supervised by Prof. Qi Hao and Gongjin Lan
+        - <b>Zexuan Jia*</b>, Gongjin Lan* (* equal contribution)
 
-    - title: Student Teaching Assistant
-      institution: SUSTech - Department of Computer Science and Engineering
-      year: 11/23-01/25
+    - title: Joint Prediction of Virtual Leader from Future Occupancy and Queueing Theory in Automated Vehicles
+      institution: IEEE Modeling, Estimation and Control Conference (MECC) 2026
+      year: Accepted, 08/2026
       description:
-        - Teaching courses, Orient Object Analysis and Design (OOAD), Machine Learning (advanced class)
-        - Assisting in the lab course teaching of pattern design models
-        - Awarded the Exellent Award of the Most Outstanding Student Teaching Assistant in the Fall Semester, 2023
-        - Contributing to and grading assignments and exams
+        - <b>Zexuan Jia</b>, Yunli Shao (preview version at ACC, <a href="https://ieeexplore.ieee.org/abstract/document/11615588">IEEE Xplore</a>)
 
-- title: Open Source Projects
+    - title: LLM-based and Game-Theoretic Traffic Trajectory Generation for Autonomous Driving
+      institution: IEEE International Conference on Computer Communication and Artificial Intelligence (CCAI) 2025
+      year: Published, 08/2025
+      description:
+        - <b>Zexuan Jia</b>, Huayu Xu
+
+- title: Research Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/Kazawaryu/OptAdDatasets">OptAdDatasets</a>
-      year: 09/23-10/24
-      description: 
-        - This project aims to optimize autonomous driving datasets by considering three key features (complexity, quality, and uncertainty) 
-        - The goal is to create a smaller yet equally effective subset by removing redundant and low-quality 3D point cloud data frames
-    - title: <a href="https://github.com/Kazawaryu/CARLA_ADA">CARLA ADA</a>
-      year: 09/23-03/24
-      description: 
-        - Data collection tools with active data acquisition algorithm implemented for CARLA Simulator
-    - title: <a href="https://github.com/Kazawaryu/Cat-Chat-Online-Chat-Software">Cat Chat</a>
-      year: 04/23-04/23
-      description: 
-        - An online chat software implemented in Java, with a server and client
-        - Support multiple clients to chat with each other, group chat, and private chat
-        - Support file transfer between clients
-    - title: <a href="https://github.com/Kazawaryu/FPGA-Classic-Mips-pipeline-CPU">FPGA CPU</a>
-      year: 04/23-05/23
-      description: 
-        - A classic MIPS pipeline CPU implemented on FPGA, in Verilog
-        - Support Mips32 instruction set, apply 5-stage pipeline, and cache
+    - title: Traffic-State Reconstruction and Prediction under Partial Observability using Hybrid AI Learning and Traffic Flow Models
+      institution: MSC Lab, University of Georgia
+      year: 08/2025 - Present
+      description:
+        - Develop a hybrid traffic-state reconstruction and prediction framework integrating deep learning with traffic flow modeling
+        - Design AI models to reconstruct short-term traffic occupancy and flow from partial observations in urban signalized environments
+        - Incorporate traffic flow dynamics to extend prediction accuracy to corridor-level horizons and capture underlying traffic evolution beyond observed data
+
+    - title: A 3D Digital Twin Framework for Closed-Loop Simulation and Control of Autonomous Vehicles (Sponsored by DOE through ORNL)
+      institution: MSC Lab, University of Georgia
+      year: 08/2025 - Present
+      description:
+        - Develop a multi-resolution digital twin integrating SUMO and CARLA for closed-loop simulation of traffic, control, vehicle dynamics, and hardware-in-the-loop
+        - Propose a five-layer (L0–L4) fidelity framework to quantify the sim-to-real gap across geometry, sensor signals, perception, and behavior, with predictive-validity analysis and gap-budget attribution to trace error sources
+        - Build a ROS-free annotation toolkit for real-world multi-sensor logs (six cameras, 3D LiDAR) that aligns LiDAR-keyed frames and auto-seeds 3D bounding boxes, reducing manual labeling to box refinement
+
+    - title: CDASim Upgrade to Support Cooperative Driving Automation Research (Sponsored by DOT through Leidos)
+      institution: MSC Lab, University of Georgia
+      year: 09/2025 - 02/2026
+      description:
+        - Develop core components of a distributed co-simulation framework integrating CARLA–CARMA–SUMO–ROS2 for unified traffic, vehicle, sensing, and control stacks
+        - Conduct component-level and system-level testing to enable scenario-based validation of cooperative driving automation (CDA) in simulation
+
+    - title: LLM-Driven Traffic Trajectory Generation with Game-Theoretic Modeling
+      institution: Waseda University & SUSTech (undergraduate)
+      year: 01/2025 - 08/2025
+      description:
+        - Game-theoretic trajectory generation for interactive multi-agent behaviors, validated on downstream perception and prediction tasks
+
+    - title: Data-Efficient Perception under Sensing Uncertainty in Autonomous Driving
+      institution: ISUS Lab, SUSTech (undergraduate)
+      year: 12/2023 - 08/2024
+      description:
+        - Dataset optimization framework that reduced dataset size by 76.4% across four datasets while preserving 99.2% of model performance
 
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2026
+      items:
+        - <b>1st Place</b>, <a href="https://ieee-et3-challenge.com/leaderboard/">2026 IEEE ITSS AV Challenge</a> (Automated Vehicle Trajectory Modeling), ranked first among 28 teams
     - year: 2025
       items:
-        - The Highest Honors in Computer Science and Engineering & The Best Graduate Thesis Awards, for outstanding academic achievement in the undergraduate program
-        - The Best Oral Presentation Award in the 2025 IEEE the 5th International Conference on Computer Communication and Artificial Intelligence (CCAI)
-        - Been admitted to the University of Georgia, USA, for a Ph.D. program in Machinical Engineering with a full scholarship
-    - year: 2024
-      items:
-        - Co-Author Paper, "Optimizing Autonomous Driving Datasets for perception, Complexity, Quality, Uncertainty"
+        - The Best Graduate Thesis Award, Southern University of Science and Technology
+        - Highest Honors in Computer Science and Engineering, Southern University of Science and Technology
+        - Best Oral Presentation, 2025 IEEE International Conference on Computer Communication and Artificial Intelligence (CCAI)
     - year: 2023
       items:
-        - The National First Prize in the 2023 China College Computer Contest (CCCC), project "Anti-Robust AI Generative Content Jugement System"
-        - The Exellent Award in 19TH Challenge Cup of Science Achievement in China
-        - The Most Outstanding Student Teaching Assistant in the Fall Semester, 2023
-        - Second Runner-up in 6TH Mojian Cup Kendo Competition, Individual Match
-    - year: 2022
-      items: 
-        - Guangdong Student Science and Technology Innovation Fund
-        - Second Runner-up in 5TH Mojian Cup Kendo Competition, Men's Team Match
-        - 2nd Dan in Kendo, Guangzhou Kendo Association, CKOU
+        - National First Prize, 2023 China College Computer Contest (CCCC)
+        - Excellent Award, 19th Challenge Cup of Science Achievement in China
+
+- title: Service
+  type: time_table
+  contents:
+    - year: 2026
+      items:
+        - Reviewer, Transportation Research Board (TRB) Annual Meeting & Transportation Research Record
+        - Reviewer, International Journal of Information Technology & Decision Making
+
+- title: Skills
+  type: map
+  contents:
+    - name: Programming
+      value: Python, C++, C, Java
+    - name: Deep Learning
+      value: PyTorch, Open3D, OpenPCDet, OpenCV, MMDetection3D
+    - name: Simulation & Robotics
+      value: CARLA, AlpaSim, SUMO, ROS/ROS2, Unreal Engine 4, Unity3D
+    - name: Systems & Tools
+      value: ARM/x86 Linux, Docker, Singularity, Slurm
 
 - title: Hobbies
   type: list

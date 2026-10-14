@@ -1,0 +1,87 @@
+# Content for the Projects page (_pages/repositories.md).
+# Each section has a list of projects. Fields:
+#   title, org, period, sponsor (optional), award (optional), tags, summary, bullets (optional),
+#   image (optional, path under assets/img/), links (optional: list of {name, url, icon})
+
+- section: Current Research
+  subtitle: Mobility Systems Control (MSC) Laboratory, University of Georgia
+  projects:
+    - title: Traffic-State Reconstruction and Prediction under Partial Observability
+      org: MSC Lab, UGA
+      period: Aug. 2025 – Present
+      tags: [Deep Learning, Traffic Flow Models, Prediction]
+      summary: A hybrid framework that couples deep learning with traffic flow modeling to reconstruct and forecast traffic states from partial observations.
+      bullets:
+        - AI models that reconstruct short-term traffic occupancy and flow in urban signalized environments
+        - Traffic flow dynamics extend prediction to corridor-level horizons and capture traffic evolution beyond observed data
+
+    - title: 3D Digital Twin for Closed-Loop Simulation and Control of Autonomous Vehicles
+      org: MSC Lab, UGA
+      period: Aug. 2025 – Present
+      sponsor: DOE, through ORNL
+      tags: [Digital Twin, SUMO, CARLA, Closed-Loop Evaluation]
+      summary: A multi-resolution digital twin integrating SUMO and CARLA for closed-loop simulation of traffic, control, vehicle dynamics, and hardware-in-the-loop.
+      bullets:
+        - A five-layer (L0–L4) fidelity framework that quantifies the sim-to-real gap across geometry, sensor signals, perception, and behavior, with gap-budget attribution to trace error sources
+        - A ROS-free annotation toolkit for real-world multi-sensor logs (six cameras, 3D LiDAR) that auto-seeds 3D bounding boxes, reducing manual labeling to box refinement
+
+    - title: Automated Vehicle Trajectory Modeling (IEEE ITSS AV Challenge)
+      org: MSC Lab, UGA
+      period: Jun. 2026 – Sep. 2026
+      award: 1st Place among 28 teams
+      tags: [Behavior Modeling, Trajectory Prediction, Automated Vehicles]
+      summary: Behavioral modeling of a following automated vehicle — predicting its 20-second future trajectory from the lead vehicle's trajectory and 10 seconds of its own history, evaluated on accuracy, safety, and comfort.
+      links:
+        - name: Challenge
+          url: https://ieee-et3-challenge.com/
+          icon: fa-solid fa-flag-checkered
+        - name: Leaderboard
+          url: https://ieee-et3-challenge.com/leaderboard/
+          icon: fa-solid fa-trophy
+
+    - title: CDASim Upgrade for Cooperative Driving Automation Research
+      org: MSC Lab, UGA
+      period: Sep. 2025 – Feb. 2026
+      sponsor: DOT, through Leidos
+      tags: [Co-Simulation, CARLA, CARMA, SUMO, ROS2]
+      summary: Core components of a distributed CARLA–CARMA–SUMO–ROS2 co-simulation framework unifying traffic, vehicle, sensing, and control stacks.
+      bullets:
+        - Component- and system-level testing for scenario-based validation of cooperative driving automation (CDA)
+      links:
+        - name: Report (USDOT)
+          url: https://rosap.ntl.bts.gov/view/dot/78950
+          icon: fa-solid fa-file-lines
+
+- section: Previous Research
+  subtitle: Undergraduate, SUSTech
+  projects:
+    - title: LLM-Driven Traffic Trajectory Generation with Game-Theoretic Modeling
+      org: Waseda University & SUSTech
+      period: Jan. 2025 – Aug. 2025
+      tags: [LLM, Game Theory, Trajectory Generation]
+      image: publication_preview/ccai.png
+      summary: Game-theoretic trajectory generation for interactive multi-agent behaviors (yielding, competition, negotiation), validated on downstream perception and motion prediction tasks.
+      links:
+        - name: Paper (CCAI 2025)
+          url: https://ieeexplore.ieee.org/document/11189448
+          icon: fa-solid fa-file-lines
+
+    - title: Data-Efficient Perception by Autonomous Driving Dataset Optimization
+      org: ISUS Lab, SUSTech
+      period: Dec. 2023 – Aug. 2024
+      tags: [3D Perception, Data Closed-Loop]
+      image: publication_preview/optaddataset.png
+      summary: A dataset optimization framework scoring scene complexity, instance quality, and sensing uncertainty — reducing dataset size by 76.4% across four datasets while preserving 99.2% of model performance.
+      links:
+        - name: Paper (T-ETCI 2026)
+          url: /publications/
+          icon: fa-solid fa-file-lines
+        - name: Code
+          url: https://github.com/Kazawaryu/OptAdDatasets
+          icon: fa-brands fa-github
+        - name: CARLA-ADA tool
+          url: https://github.com/Kazawaryu/CARLA_ADA
+          icon: fa-brands fa-github
+        - name: Dataset
+          url: https://www.kaggle.com/datasets/ghosnp/carla-4scenes
+          icon: fa-brands fa-kaggle

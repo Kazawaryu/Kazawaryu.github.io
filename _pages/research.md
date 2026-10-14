@@ -1,50 +1,58 @@
 ---
 layout: page
-permalink: /repositories/
-title: Projects
-description: Curated selected open-source projects I have completed independently, including deep learning and software engineering projects.
+permalink: /research/
+title: Research
+description: Research projects I have led or contributed to.
 nav: true
-nav_order: 4
+nav_order: 1
 ---
 
-## GitHub User
+{% for group in site.data.projects %}
+<h2 class="project-section">{{ group.section }}</h2>
+{% if group.subtitle %}<p class="project-section-sub">{{ group.subtitle }}</p>{% endif %}
 
-<!-- {% if site.data.repositories.github_users %}
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.html username=user %}
-  {% endfor %}
-</div> -->
-
-
- <a href="https://github.com/Kazawaryu">
- <img  src="https://bad-apple-github-readme.vercel.app/api?show_bg=1&username=Kazawaryu&show_icons=true&icon_color=CE1D2D&text_color=718096&bg_color=ffffff" />
- </a>
-
-
----
-
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-  {% if site.data.repositories.github_users.size > 1 %}
-  <h4>{{ user }}</h4>
-  {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.html username=user %}
+{% for p in group.projects %}
+<div class="project-card">
+  <div class="row">
+    <div class="{% if p.image %}col-sm-8{% else %}col-12{% endif %}">
+      <h3 class="project-title">{{ p.title }}</h3>
+      <p class="project-meta">
+        <i class="fa-solid fa-flask fa-sm"></i> {{ p.org }}
+        &nbsp;&middot;&nbsp; <i class="fa-solid fa-calendar fa-sm"></i> {{ p.period }}
+        {% if p.sponsor %}&nbsp;&middot;&nbsp; <i class="fa-solid fa-landmark fa-sm"></i> Sponsored by {{ p.sponsor }}{% endif %}
+      </p>
+      {% if p.award %}<p class="project-award"><i class="fa-solid fa-trophy"></i> {{ p.award }}</p>{% endif %}
+      <p class="project-summary">{{ p.summary }}</p>
+      {% if p.bullets %}
+      <ul class="project-bullets">
+        {% for b in p.bullets %}<li>{{ b }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+      <div class="project-tags">
+        {% for t in p.tags %}<span class="project-tag">{{ t }}</span>{% endfor %}
+      </div>
+      {% if p.links %}
+      <div class="project-links">
+        {% for l in p.links %}
+        <a class="btn btn-sm z-depth-0" role="button" href="{% if l.url contains '://' %}{{ l.url }}{% else %}{{ l.url | relative_url }}{% endif %}"><i class="{{ l.icon }}"></i> {{ l.name }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% if p.image %}
+    <div class="col-sm-4 project-image">
+      {% assign img = p.image | prepend: 'assets/img/' %}
+      {% include figure.html path=img class="img-fluid rounded z-depth-1" alt=p.title zoomable=true sizes="(min-width: 576px) 30vw, 95vw" %}
+    </div>
+    {% endif %}
   </div>
-
-  ---
-
-{% endfor %}
-{% endif %}
-{% endif %}
-
-## GitHub Repositories
-
-{% if site.data.repositories.github_repos %}
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.html repository=repo %}
-  {% endfor %}
 </div>
-{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 class="project-section">Open Source</h2>
+<p class="project-section-sub">More on <a href="https://github.com/{{ site.github_username }}">GitHub</a>.</p>
+<ul class="project-bullets">
+  <li><a href="https://github.com/Kazawaryu/OptAdDatasets">OptAdDatasets</a> — dataset optimization by complexity, quality, and uncertainty</li>
+  <li><a href="https://github.com/Kazawaryu/CARLA_ADA">CARLA-ADA</a> — active data acquisition tool for the CARLA simulator</li>
+</ul>

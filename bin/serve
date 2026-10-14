@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Preview the site locally at http://localhost:4000 with live reload.
+# Usage: bin/serve [extra jekyll options, e.g. --drafts --unpublished]
+set -e
+cd "$(dirname "$0")/.."
+bundle exec jekyll serve \
+  --config _config.yml,_config_dev.yml \
+  --livereload \
+  "$@"

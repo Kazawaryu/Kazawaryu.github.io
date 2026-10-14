@@ -1,0 +1,15 @@
+# Local development overrides, layered on top of _config.yml by bin/serve.
+# Not used by the GitHub Actions deploy.
+
+url: http://localhost:4000
+
+# ImageMagick (`convert`) is not required locally; images are served as-is.
+imagemagick:
+  enabled: false
+
+# Skip analytics while previewing
+enable_google_analytics: false
+
+# Faster rebuilds
+jekyll-minifier:
+  exclude: ['*']

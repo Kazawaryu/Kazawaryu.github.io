@@ -12,15 +12,14 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Updated on 2024-10-14.
 keywords:  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🔭  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://jonaruthardt.github.io # the base hostname & protocol for your site
+url: https://kazawaryu.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -105,7 +104,7 @@ zotero_username: # your zotero username
 wechat_qr: wechat.jpeg # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  The best way to contact me is via <a href = "zexuan.jia@uga.edu">email</a>.
+  The best way to contact me is via <a href="mailto:zexuan.jia@uga.edu">email</a>.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -173,8 +172,7 @@ collections:
     output: true
     permalink: /news/:path/
   projects:
-    enabled: false
-    output: true
+    output: false
     permalink: /projects/:path/
 
 announcements:
@@ -208,6 +206,17 @@ kramdown:
 include: ['_pages']
 exclude:
   - bin
+  - _pages/about_einstein.md
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - FAQ.md
+  - INSTALL.md
+  - README.md
+  - LICENSE
+  - Dockerfile
+  - docker-compose.yml
+  - purgecss.config.js
+  - reports
   - Gemfile
   - Gemfile.lock
   - vendor
@@ -267,8 +276,8 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['AD', 'survey', 'math'] # these tags will be displayed on the front page of your blog
-display_categories: ['extracurricular', 'course-work', 'note'] # these categories will be displayed on the front page of your blog
+display_tags: ['AD', 'dataset', 'survey', 'math'] # these tags will be displayed on the front page of your blog
+display_categories: ['code', 'course-work', 'note'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -276,8 +285,8 @@ display_categories: ['extracurricular', 'course-work', 'note'] # these categorie
 
 scholar:
 
-  last_name: [Ruthardt]
-  first_name: [Jona, J., J. M. , Jona M.]
+  last_name: [Jia]
+  first_name: [Zexuan, Z.]
 
   style: apa
   locale: en
